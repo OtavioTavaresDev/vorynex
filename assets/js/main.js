@@ -31,16 +31,16 @@
   const navMenu = document.getElementById('nav-menu');
   const navOverlay = document.getElementById('nav-overlay');
 
-  // ---------- MENU FUNCTIONS ----------
+  // ---------- MENU FUNCTIONS (com suporte a touch) ----------
   function openMenu() {
-    navMenu?.classList.add('active');
-    navOverlay?.classList.add('active');
+    if (navMenu) navMenu.classList.add('active');
+    if (navOverlay) navOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
   
   function closeMenu() {
-    navMenu?.classList.remove('active');
-    navOverlay?.classList.remove('active');
+    if (navMenu) navMenu.classList.remove('active');
+    if (navOverlay) navOverlay.classList.remove('active');
     document.body.style.overflow = '';
   }
   
@@ -147,15 +147,15 @@
   }
   
   function openCart() {
-    closeMenu(); // Fecha menu hamburger se estiver aberto
-    cartSidebar?.classList.add('active');
-    cartOverlay?.classList.add('active');
+    closeMenu();
+    if (cartSidebar) cartSidebar.classList.add('active');
+    if (cartOverlay) cartOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
   
   function closeCart() {
-    cartSidebar?.classList.remove('active');
-    cartOverlay?.classList.remove('active');
+    if (cartSidebar) cartSidebar.classList.remove('active');
+    if (cartOverlay) cartOverlay.classList.remove('active');
     if (!navMenu?.classList.contains('active')) {
       document.body.style.overflow = '';
     }
@@ -263,7 +263,7 @@
     const langData = await loadTranslations(lang);
     applyTranslations(langData);
     localStorage.setItem('vorynex_lang', lang);
-    langDropdown?.classList.remove('show');
+    if (langDropdown) langDropdown.classList.remove('show');
   }
 
   // ---------- RENDER PRODUCTS ----------
@@ -361,49 +361,86 @@
     applyTranslations(langData);
     await loadProducts();
 
-    // Menu events
-    menuToggle?.addEventListener('click', openMenu);
-    navOverlay?.addEventListener('click', closeMenu);
-    navMenu?.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
+    // Menu events (compatível com touch)
+    if (menuToggle) {
+      menuToggle.addEventListener('click', openMenu);
+      menuToggle.addEventListener('touchstart', (e) => { e.preventDefault(); openMenu(); }, { passive: false });
+    }
+    if (navOverlay) {
+      navOverlay.addEventListener('click', closeMenu);
+      navOverlay.addEventListener('touchstart', (e) => { e.preventDefault(); closeMenu(); }, { passive: false });
+    }
+    if (navMenu) {
+      navMenu.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', closeMenu);
+        link.addEventListener('touchstart', (e) => { e.preventDefault(); closeMenu(); }, { passive: false });
+      });
+    }
     
     // Cart events
-    cartIcon?.addEventListener('click', openCart);
-    cartCloseBtn?.addEventListener('click', closeCart);
-    cartOverlay?.addEventListener('click', closeCart);
-    checkoutBtn?.addEventListener('click', checkout);
+    if (cartIcon) {
+      cartIcon.addEventListener('click', openCart);
+      cartIcon.addEventListener('touchstart', (e) => { e.preventDefault(); openCart(); }, { passive: false });
+    }
+    if (cartCloseBtn) {
+      cartCloseBtn.addEventListener('click', closeCart);
+      cartCloseBtn.addEventListener('touchstart', (e) => { e.preventDefault(); closeCart(); }, { passive: false });
+    }
+    if (cartOverlay) {
+      cartOverlay.addEventListener('click', closeCart);
+      cartOverlay.addEventListener('touchstart', (e) => { e.preventDefault(); closeCart(); }, { passive: false });
+    }
+    if (checkoutBtn) {
+      checkoutBtn.addEventListener('click', checkout);
+    }
     
     // Filter events
-    searchInput?.addEventListener('input', filterAndRender);
-    categoryFilter?.addEventListener('change', filterAndRender);
-    sortSelect?.addEventListener('change', filterAndRender);
+    if (searchInput) searchInput.addEventListener('input', filterAndRender);
+    if (categoryFilter) categoryFilter.addEventListener('change', filterAndRender);
+    if (sortSelect) sortSelect.addEventListener('change', filterAndRender);
     
-    // Language events
-    langDropdownBtn?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langDropdown?.classList.toggle('show');
-    });
+    // Language dropdown (com touch)
+    if (langDropdownBtn) {
+      langDropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (langDropdown) langDropdown.classList.toggle('show');
+      });
+      langDropdownBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (langDropdown) langDropdown.classList.toggle('show');
+      }, { passive: false });
+    }
     document.querySelectorAll('.lang-dropdown-content a').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
         const lang = link.dataset.lang;
         switchLanguage(lang);
       });
+      link.addEventListener('touchstart', e => {
+        e.preventDefault();
+        const lang = link.dataset.lang;
+        switchLanguage(lang);
+      }, { passive: false });
     });
     
-    // Close dropdown on outside click
+    // Fechar dropdown ao clicar fora
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.language-selector')) {
-        langDropdown?.classList.remove('show');
+        if (langDropdown) langDropdown.classList.remove('show');
       }
     });
+    document.addEventListener('touchstart', (e) => {
+      if (!e.target.closest('.language-selector')) {
+        if (langDropdown) langDropdown.classList.remove('show');
+      }
+    }, { passive: true });
     
     // Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeAllMenus();
-        langDropdown?.classList.remove('show');
+        if (langDropdown) langDropdown.classList.remove('show');
       }
     });
 
