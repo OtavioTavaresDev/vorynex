@@ -163,7 +163,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   z-index: 400;
   overflow: hidden;
 }
-.lang-dropdown-content.show { display: block; }
+.lang-dropdown-content.show { display: block; position: fixed; }
 .lang-dropdown-content a {
   display: block;
   padding: 12px 16px;
