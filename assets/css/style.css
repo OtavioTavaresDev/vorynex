@@ -1051,3 +1051,48 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
     max-width: 400px;
   }
 }
+
+/* === CORREÇÕES DE OVERFLOW E ZOOM === */
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  overflow-x: hidden;
+}
+
+/* Carrinho sempre 100% em telas pequenas */
+@media (max-width: 480px) {
+  .cart-sidebar {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Garantir que nada ultrapasse a largura da tela */
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Impedir scroll horizontal em qualquer elemento */
+.header, .hero, .catalog, .trust, .how-to-buy, .testimonials, .faq, .footer {
+  overflow-x: hidden;
+}
+
+/* Ajuste extra para o grid de produtos não vazar */
+.products-grid {
+  overflow: hidden;
+}
+
+.product-card {
+  word-wrap: break-word;
+}
+
+/* Botões não quebrarem layout */
+.btn-card {
+  white-space: normal;
+  word-break: break-word;
+}
