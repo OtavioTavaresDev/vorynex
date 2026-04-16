@@ -2,7 +2,7 @@
   'use strict';
 
   const WHATSAPP_NUMBER = '5511998447863';
-  const RESELLER_FEE = 200; // Taxa de revenda em dólares
+  const RESELLER_FEE = 200;
   const SUPPORTED_LANGS = ['en', 'pt', 'fr', 'es', 'it', 'ru'];
   let currentLang = 'en';
   let translations = {};
@@ -25,6 +25,29 @@
   const langDropdownBtn = document.getElementById('langDropdownBtn');
   const langDropdown = document.getElementById('langDropdown');
   const currentLangSpan = document.getElementById('currentLang');
+  
+  // Menu elements
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navOverlay = document.getElementById('nav-overlay');
+
+  // ---------- MENU FUNCTIONS ----------
+  function openMenu() {
+    navMenu?.classList.add('active');
+    navOverlay?.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeMenu() {
+    navMenu?.classList.remove('active');
+    navOverlay?.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  
+  function closeAllMenus() {
+    closeMenu();
+    closeCart();
+  }
 
   // ---------- CART FUNCTIONS ----------
   function loadCart() {
@@ -32,14 +55,17 @@
     if (saved) try { cart = JSON.parse(saved); } catch(e){ cart = []; }
     updateCartUI();
   }
+  
   function saveCart() {
     localStorage.setItem('vorynex_cart', JSON.stringify(cart));
     updateCartUI();
   }
+  
   function updateCartUI() {
     if (cartCountSpan) cartCountSpan.textContent = cart.length;
     renderCartItems();
   }
+  
   function addToCart(product) {
     const existing = cart.find(item => item.id === product.id);
     if (existing) {
@@ -50,10 +76,12 @@
     saveCart();
     openCart();
   }
+  
   function removeFromCart(productId) {
     cart = cart.filter(item => item.id !== productId);
     saveCart();
   }
+  
   function updateQuantity(productId, delta) {
     const item = cart.find(i => i.id === productId);
     if (item) {
@@ -62,6 +90,7 @@
       else saveCart();
     }
   }
+  
   function renderCartItems() {
     if (!cartItemsDiv) return;
     const langData = translations[currentLang] || {};
@@ -92,7 +121,6 @@
       `;
     });
     const total = subtotal + RESELLER_FEE;
-    // Adiciona linha da taxa de revenda
     html += `
       <div class="cart-reseller-fee">
         <span>${langData.resellerFee || 'Reseller Fee'}:</span>
@@ -101,7 +129,7 @@
     `;
     cartItemsDiv.innerHTML = html;
     cartTotalSpan.textContent = `$${total.toFixed(2)}`;
-    // Attach cart item listeners
+    
     cartItemsDiv.querySelectorAll('[data-id]').forEach(el => {
       el.addEventListener('click', e => {
         e.stopPropagation();
@@ -112,19 +140,27 @@
         else if (action === 'decrease') updateQuantity(id, -1);
       });
     });
-    // Update header
+    
     const cartHeader = document.querySelector('.cart-header h3');
     if (cartHeader) cartHeader.innerHTML = `<i class="fas fa-shopping-cart"></i> ${langData.cartTitle || 'Your Cart'}`;
     if (checkoutBtn) checkoutBtn.textContent = langData.checkoutBtn || 'Checkout via WhatsApp';
   }
+  
   function openCart() {
+    closeMenu(); // Fecha menu hamburger se estiver aberto
     cartSidebar?.classList.add('active');
     cartOverlay?.classList.add('active');
+    document.body.style.overflow = 'hidden';
   }
+  
   function closeCart() {
     cartSidebar?.classList.remove('active');
     cartOverlay?.classList.remove('active');
+    if (!navMenu?.classList.contains('active')) {
+      document.body.style.overflow = '';
+    }
   }
+  
   function checkout() {
     if (cart.length === 0) return;
     const langData = translations[currentLang] || {};
@@ -149,6 +185,7 @@
       return translations[lang] || translations['en'];
     } catch(e) { return {}; }
   }
+  
   function applyTranslations(langData) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -167,6 +204,7 @@
     if (products.length) filterAndRender();
     updateCartUI();
   }
+  
   function renderBenefits(langData) {
     const container = document.getElementById('benefits-container');
     if (!container) return;
@@ -185,6 +223,7 @@
       </div>
     `).join('');
   }
+  
   function renderFAQs(langData) {
     const container = document.getElementById('faq-container');
     if (!container) return;
@@ -195,13 +234,18 @@
     }
     container.innerHTML = html;
   }
+  
   function renderTestimonials(langData) {
     const track = document.getElementById('testimonials-track');
     if (!track) return;
     const items = [];
     for (let i=1; i<=6; i++) {
       const text = langData[`testimonial${i}`] || '';
-      if (text) items.push({ text, author: `— ${['A. M.','L. C.','P. R.','J. K.','M. S.','T. B.'][i-1]}, ${['Red Team Lead','Security Analyst','CTO','Pentester','DevOps','Security Engineer'][i-1]}`, stars: i<=4 ? 5 : 4 });
+      if (text) items.push({ 
+        text, 
+        author: `— ${['A. M.','L. C.','P. R.','J. K.','M. S.','T. B.'][i-1]}, ${['Red Team Lead','Security Analyst','CTO','Pentester','DevOps','Security Engineer'][i-1]}`, 
+        stars: i<=4 ? 5 : 4 
+      });
     }
     const cards = items.map(t => `
       <div class="testimonial-card">
@@ -253,7 +297,7 @@
     productsContainer.innerHTML = html;
   }
 
-  productsContainer.addEventListener('click', (e) => {
+  productsContainer?.addEventListener('click', (e) => {
     const addBtn = e.target.closest('.add-to-cart-btn');
     if (!addBtn) return;
     e.preventDefault();
@@ -263,7 +307,9 @@
     addToCart({ id, name, price });
   });
 
-  function escapeHTML(s) { return String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[m]); }
+  function escapeHTML(s) { 
+    return String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[m]); 
+  }
 
   // ---------- FILTER & SORT ----------
   function filterAndRender() {
@@ -294,12 +340,18 @@
         const cats = [...new Set(products.map(p => p.category).filter(Boolean))];
         const langData = translations[currentLang] || {};
         categoryFilter.innerHTML = `<option value="all">${langData.allCategories || 'All Categories'}</option>`;
-        cats.forEach(c => { const opt = new Option(c.charAt(0).toUpperCase()+c.slice(1), c); categoryFilter.add(opt); });
+        cats.forEach(c => { 
+          const opt = new Option(c.charAt(0).toUpperCase()+c.slice(1), c); 
+          categoryFilter.add(opt); 
+        });
       }
       filterAndRender();
-    } catch(e) { productsContainer.innerHTML = '<div class="loading-state">Error loading products</div>'; }
+    } catch(e) { 
+      productsContainer.innerHTML = '<div class="loading-state">Error loading products</div>'; 
+    }
   }
 
+  // ---------- INIT ----------
   async function init() {
     loadCart();
     const savedLang = localStorage.getItem('vorynex_lang');
@@ -309,15 +361,29 @@
     applyTranslations(langData);
     await loadProducts();
 
-    searchInput?.addEventListener('input', filterAndRender);
-    categoryFilter?.addEventListener('change', filterAndRender);
-    sortSelect?.addEventListener('change', filterAndRender);
+    // Menu events
+    menuToggle?.addEventListener('click', openMenu);
+    navOverlay?.addEventListener('click', closeMenu);
+    navMenu?.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+    
+    // Cart events
     cartIcon?.addEventListener('click', openCart);
     cartCloseBtn?.addEventListener('click', closeCart);
     cartOverlay?.addEventListener('click', closeCart);
     checkoutBtn?.addEventListener('click', checkout);
     
-    langDropdownBtn?.addEventListener('click', () => langDropdown?.classList.toggle('show'));
+    // Filter events
+    searchInput?.addEventListener('input', filterAndRender);
+    categoryFilter?.addEventListener('change', filterAndRender);
+    sortSelect?.addEventListener('change', filterAndRender);
+    
+    // Language events
+    langDropdownBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDropdown?.classList.toggle('show');
+    });
     document.querySelectorAll('.lang-dropdown-content a').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
@@ -325,48 +391,33 @@
         switchLanguage(lang);
       });
     });
-    window.addEventListener('click', e => { if (!e.target.closest('.language-selector')) langDropdown?.classList.remove('show'); });
-
-    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
-      const href = a.getAttribute('href'); if (href==='#') return;
-      const el = document.querySelector(href); if(el) { e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
-    }));
-  }
-  init();
-})();
-
-// Menu hamburger functionality
-(function() {
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  const navOverlay = document.getElementById('nav-overlay');
-  
-  if (menuToggle && navMenu && navOverlay) {
-    function openMenu() {
-      navMenu.classList.add('active');
-      navOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
     
-    function closeMenu() {
-      navMenu.classList.remove('active');
-      navOverlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    
-    menuToggle.addEventListener('click', openMenu);
-    navOverlay.addEventListener('click', closeMenu);
-    
-    // Close menu when clicking a link
-    navMenu.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-    
-    // Close on escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-        closeMenu();
+    // Close dropdown on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.language-selector')) {
+        langDropdown?.classList.remove('show');
       }
     });
+    
+    // Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeAllMenus();
+        langDropdown?.classList.remove('show');
+      }
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const href = a.getAttribute('href'); 
+      if (href==='#') return;
+      const el = document.querySelector(href); 
+      if(el) { 
+        e.preventDefault(); 
+        el.scrollIntoView({behavior:'smooth'}); 
+      }
+    }));
   }
+  
+  init();
 })();
