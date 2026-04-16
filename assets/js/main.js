@@ -31,7 +31,7 @@
   const navMenu = document.getElementById('nav-menu');
   const navOverlay = document.getElementById('nav-overlay');
 
-  // ---------- MENU FUNCTIONS (com suporte a touch) ----------
+  // ---------- MENU FUNCTIONS ----------
   function openMenu() {
     if (navMenu) navMenu.classList.add('active');
     if (navOverlay) navOverlay.classList.add('active');
@@ -361,7 +361,7 @@
     applyTranslations(langData);
     await loadProducts();
 
-    // Menu events (compatível com touch)
+    // Menu events
     if (menuToggle) {
       menuToggle.addEventListener('click', openMenu);
       menuToggle.addEventListener('touchstart', (e) => { e.preventDefault(); openMenu(); }, { passive: false });
@@ -373,7 +373,6 @@
     if (navMenu) {
       navMenu.querySelectorAll('.nav__link').forEach(link => {
         link.addEventListener('click', closeMenu);
-        link.addEventListener('touchstart', (e) => { e.preventDefault(); closeMenu(); }, { passive: false });
       });
     }
     
@@ -384,11 +383,9 @@
     }
     if (cartCloseBtn) {
       cartCloseBtn.addEventListener('click', closeCart);
-      cartCloseBtn.addEventListener('touchstart', (e) => { e.preventDefault(); closeCart(); }, { passive: false });
     }
     if (cartOverlay) {
       cartOverlay.addEventListener('click', closeCart);
-      cartOverlay.addEventListener('touchstart', (e) => { e.preventDefault(); closeCart(); }, { passive: false });
     }
     if (checkoutBtn) {
       checkoutBtn.addEventListener('click', checkout);
@@ -399,42 +396,27 @@
     if (categoryFilter) categoryFilter.addEventListener('change', filterAndRender);
     if (sortSelect) sortSelect.addEventListener('change', filterAndRender);
     
-    // Language dropdown (com touch)
+    // Language dropdown
     if (langDropdownBtn) {
       langDropdownBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         if (langDropdown) langDropdown.classList.toggle('show');
       });
-      langDropdownBtn.addEventListener('touchstart', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        if (langDropdown) langDropdown.classList.toggle('show');
-      }, { passive: false });
     }
     document.querySelectorAll('.lang-dropdown-content a').forEach(link => {
-      link.addEventListener('click', e => {
+      link.addEventListener('click', (e) => {
         e.preventDefault();
         const lang = link.dataset.lang;
         switchLanguage(lang);
       });
-      link.addEventListener('touchstart', e => {
-        e.preventDefault();
-        const lang = link.dataset.lang;
-        switchLanguage(lang);
-      }, { passive: false });
     });
     
-    // Fechar dropdown ao clicar fora
+    // Close dropdown on outside click
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.language-selector')) {
         if (langDropdown) langDropdown.classList.remove('show');
       }
     });
-    document.addEventListener('touchstart', (e) => {
-      if (!e.target.closest('.language-selector')) {
-        if (langDropdown) langDropdown.classList.remove('show');
-      }
-    }, { passive: true });
     
     // Escape key
     document.addEventListener('keydown', (e) => {

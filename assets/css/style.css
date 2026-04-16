@@ -22,12 +22,15 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .container { 
   max-width: 1280px; 
   margin: 0 auto; 
   padding: 0 16px; 
+  overflow-x: hidden;
 }
 
 h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
@@ -50,7 +53,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 200;
   background-color: rgba(15,15,15,0.85);
 }
 
@@ -67,7 +70,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  z-index: 102;
+  z-index: 202;
 }
 
 .logo-image {
@@ -90,7 +93,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   display: flex;
   align-items: center;
   gap: 12px;
-  z-index: 102;
+  z-index: 202;
 }
 
 /* Menu hamburger */
@@ -103,14 +106,14 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   cursor: pointer;
   padding: 8px;
   transition: var(--transition);
-  z-index: 102;
+  z-index: 202;
 }
 
 .menu-toggle:hover {
   color: var(--accent-cyan);
 }
 
-/* Navigation menu (desktop hidden by default, shown on mobile as sidebar) */
+/* Navigation menu (sidebar) */
 .nav {
   position: fixed;
   top: 0;
@@ -124,7 +127,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   gap: 16px;
   border-left: 1px solid var(--border-subtle);
   box-shadow: -5px 0 30px rgba(0,0,0,0.5);
-  z-index: 101;
+  z-index: 250;
   transition: right 0.3s ease;
   overflow-y: auto;
   display: flex;
@@ -157,7 +160,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   inset: 0;
   background: rgba(0,0,0,0.7);
   backdrop-filter: blur(4px);
-  z-index: 100;
+  z-index: 240;
 }
 
 .nav-overlay.active {
@@ -172,7 +175,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   padding: 8px;
   color: var(--text-primary);
   transition: var(--transition);
-  z-index: 102;
+  z-index: 202;
 }
 
 .cart-icon:hover {
@@ -198,7 +201,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
 /* Language selector */
 .language-selector.dropdown {
   position: relative;
-  z-index: 102;
+  z-index: 202;
 }
 
 .lang-btn {
@@ -232,7 +235,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   border-radius: 12px;
   min-width: 150px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  z-index: 103;
+  z-index: 260;
   overflow: hidden;
 }
 
@@ -260,7 +263,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   inset: 0;
   background: rgba(0,0,0,0.7);
   backdrop-filter: blur(4px);
-  z-index: 150;
+  z-index: 300;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
@@ -280,7 +283,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   height: 100vh;
   background: var(--bg-card);
   border-left: 1px solid var(--border-subtle);
-  z-index: 151;
+  z-index: 310;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   display: flex;
@@ -476,7 +479,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   background: radial-gradient(circle at 30% 30%, rgba(0,229,255,0.25), rgba(139,92,246,0.15) 70%);
   border-radius: 40px;
   border: 1px solid rgba(0,229,255,0.25);
-  box-shadow: 0 0 40px rgba(0,229,255,0.2);
+  box-shadow: 0 0 40px rgba(0,229,255,0.3), 0 0 80px rgba(139,92,246,0.2), inset 0 0 20px rgba(0,229,255,0.1);
   backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
@@ -488,7 +491,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   max-width: 55%;
   height: auto;
   border-radius: 50%;
-  filter: drop-shadow(0 0 20px rgba(0,229,255,0.3));
+  box-shadow: 0 0 30px rgba(0,229,255,0.5);
 }
 
 @keyframes float {
@@ -862,6 +865,25 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   border-top: 1px solid rgba(255,255,255,0.03);
 }
 
+/* === CORREÇÕES DE OVERFLOW === */
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.products-grid {
+  overflow: visible;
+}
+
+.product-card {
+  word-wrap: break-word;
+}
+
+.btn-card {
+  white-space: normal;
+  word-break: break-word;
+}
+
 /* === DESKTOP STYLES === */
 @media (min-width: 640px) {
   .products-grid {
@@ -911,6 +933,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
     border-left: none;
     box-shadow: none;
     overflow-y: visible;
+    z-index: auto;
   }
   
   .nav__link {
@@ -1052,47 +1075,10 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   }
 }
 
-/* === CORREÇÕES DE OVERFLOW E ZOOM === */
-body {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.container {
-  overflow-x: hidden;
-}
-
 /* Carrinho sempre 100% em telas pequenas */
 @media (max-width: 480px) {
   .cart-sidebar {
     width: 100%;
     max-width: 100%;
   }
-}
-
-/* Garantir que nada ultrapasse a largura da tela */
-img, video, canvas, svg {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Impedir scroll horizontal em qualquer elemento */
-.header, .hero, .catalog, .trust, .how-to-buy, .testimonials, .faq, .footer {
-  overflow-x: hidden;
-}
-
-/* Ajuste extra para o grid de produtos não vazar */
-.products-grid {
-  overflow: hidden;
-}
-
-.product-card {
-  word-wrap: break-word;
-}
-
-/* Botões não quebrarem layout */
-.btn-card {
-  white-space: normal;
-  word-break: break-word;
 }
