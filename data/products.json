@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vx-001",
+    "category": "security",
+    "price": "$47",
+    "demo_link": "",
+    "whatsapp_message_template": "Hello Vorynex, I want to purchase *Blue Team Toolkit* ($47). I await payment and delivery instructions.",
+    "translations": {
+      "en": { "name": "Blue Team Toolkit", "description": "Script and playbook collection for hardening, monitoring, and incident response." },
+      "pt": { "name": "Kit Blue Team", "description": "Coleção de scripts e playbooks para hardening, monitoramento e resposta a incidentes." },
+      "fr": { "name": "Kit Blue Team", "description": "Collection de scripts et playbooks pour le durcissement, la surveillance et la réponse aux incidents." },
+      "es": { "name": "Kit Blue Team", "description": "Colección de scripts y playbooks para hardening, monitoreo y respuesta a incidentes." },
+      "it": { "name": "Kit Blue Team", "description": "Raccolta di script e playbook per hardening, monitoraggio e risposta agli incidenti." },
+      "ru": { "name": "Blue Team Toolkit", "description": "Коллекция скриптов и сценариев для усиления защиты, мониторинга и реагирования на инциденты." }
+    }
+  },
+  {
+    "id": "vx-002",
+    "category": "security",
+    "price": "$89",
+    "demo_link": "https://vorynex.github.io/demo/redteam-preview",
+    "whatsapp_message_template": "",
+    "translations": {
+      "en": { "name": "Red Team OPSEC Automation", "description": "Automated tools for secure reconnaissance and EDR evasion." },
+      "pt": { "name": "Automação OPSEC Red Team", "description": "Ferramentas automatizadas para reconhecimento seguro e evasão de EDR." },
+      "fr": { "name": "Automatisation OPSEC Red Team", "description": "Outils automatisés pour la reconnaissance sécurisée et l'évasion EDR." },
+      "es": { "name": "Automatización OPSEC Red Team", "description": "Herramientas automatizadas para reconocimiento seguro y evasión de EDR." },
+      "it": { "name": "Automazione OPSEC Red Team", "description": "Strumenti automatizzati per ricognizione sicura ed evasione EDR." },
+      "ru": { "name": "Red Team OPSEC Automation", "description": "Автоматизированные инструменты для безопасной разведки и обхода EDR." }
+    }
+  },
+  {
+    "id": "vx-003",
+    "category": "saas",
+    "price": "$19/mo",
+    "demo_link": "https://demo.vorynex.tech",
+    "whatsapp_message_template": "I'm interested in SaaS Monitor. Price: $19/mo. I'd like to activate my access.",
+    "translations": {
+      "en": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Lightweight dashboard for asset monitoring and real-time threat intelligence." },
+      "pt": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Painel leve para monitoramento de ativos e inteligência de ameaças em tempo real." },
+      "fr": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Tableau de bord léger pour la surveillance des actifs et le renseignement sur les menaces en temps réel." },
+      "es": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Panel ligero para monitoreo de activos e inteligencia de amenazas en tiempo real." },
+      "it": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Dashboard leggero per il monitoraggio degli asset e intelligence sulle minacce in tempo reale." },
+      "ru": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Легкая панель для мониторинга активов и анализа угроз в реальном времени." }
+    }
+  },
+  {
+    "id": "vx-004",
+    "category": "automation",
+    "price": "$37",
+    "demo_link": "",
+    "whatsapp_message_template": "",
+    "translations": {
+      "en": { "name": "CyberSec Scripts Bundle", "description": "20+ scripts for log analysis, enumeration, and security task automation." },
+      "pt": { "name": "Pacote de Scripts CyberSec", "description": "Mais de 20 scripts para análise de logs, enumeração e automação de tarefas de segurança." },
+      "fr": { "name": "Pack de scripts CyberSec", "description": "Plus de 20 scripts pour l'analyse de logs, l'énumération et l'automatisation des tâches de sécurité." },
+      "es": { "name": "Paquete de Scripts CyberSec", "description": "Más de 20 scripts para análisis de logs, enumeración y automatización de tareas de seguridad." },
+      "it": { "name": "Pacchetto Script CyberSec", "description": "Oltre 20 script per analisi dei log, enumerazione e automazione delle attività di sicurezza." },
+      "ru": { "name": "CyberSec Scripts Bundle", "description": "Более 20 скриптов для анализа журналов, перечисления и автоматизации задач безопасности." }
+    }
+  }
+]

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Vorynex · Digital Tools Shop</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/images/vorynex.png">
+</head>
+<body>
+
+<!-- Overlay do carrinho (escurece fundo) -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<!-- Carrinho lateral (desliza da direita) -->
+<div class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+    <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+    <button class="cart-close" id="cart-close">&times;</button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <p class="cart-empty">Your cart is empty.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">Total: <span id="cart-total">$0</span></div>
+    <button class="btn btn--primary btn--full" id="checkout-btn">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="logo-wrapper">
+      <img src="assets/images/vorynex.png" alt="Vorynex" class="logo-image">
+      <span class="logo-text" data-i18n="siteName">VORYNEX</span>
+    </a>
+    <div class="header__right">
+      <nav class="nav">
+        <a href="#catalogo" class="nav__link" data-i18n="navCatalog">Catalog</a>
+        <a href="#benefits" class="nav__link" data-i18n="navBenefits">Benefits</a>
+        <a href="#reviews" class="nav__link">Reviews</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+      <div class="cart-icon" id="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+      <div class="language-selector dropdown">
+        <button class="lang-btn" id="langDropdownBtn">
+          <i class="fas fa-globe"></i> <span id="currentLang">EN</span> <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="lang-dropdown-content" id="langDropdown">
+          <a href="#" data-lang="en">🇺🇸 English</a>
+          <a href="#" data-lang="pt">🇧🇷 Português</a>
+          <a href="#" data-lang="es">🇪🇸 Español</a>
+          <a href="#" data-lang="fr">🇫🇷 Français</a>
+          <a href="#" data-lang="it">🇮🇹 Italiano</a>
+          <a href="#" data-lang="ru">🇷🇺 Русский</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <span class="hero__brand">Vorynex</span>
+        <h1 class="hero__title"><span class="hero__slogan" data-i18n="heroSlogan">Digital tools.<br>Built for execution.</span></h1>
+        <p class="hero__subtitle" data-i18n="heroSubtitle">Premium toolkits, SaaS & cybersecurity. Delivered instantly via WhatsApp.</p>
+        <div class="hero__cta">
+          <a href="#catalogo" class="btn btn--primary" data-i18n="btnExplore">Explore Tools</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="glow-card">
+          <img src="assets/images/vorynex.png" alt="Vorynex" class="glow-card__image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="catalog">
+    <div class="container">
+      <div class="catalog-header">
+        <h2 class="section-title" data-i18n="catalogTitle">Premium <span class="text-gradient">Tools</span></h2>
+        <div class="catalog-controls">
+          <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search..." data-i18n-placeholder="searchPlaceholder">
+          </div>
+          <div class="select-wrapper">
+            <select id="category-filter" class="filter-select"></select>
+          </div>
+          <div class="select-wrapper">
+            <select id="sort-select" class="filter-select">
+              <option value="default" data-i18n="sortDefault">Sort by</option>
+              <option value="price-asc" data-i18n="sortPriceAsc">Price: Low to High</option>
+              <option value="price-desc" data-i18n="sortPriceDesc">Price: High to Low</option>
+              <option value="name-asc" data-i18n="sortNameAsc">Name: A-Z</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="products-container" class="products-grid"><div class="loading-state" data-i18n="loading">Loading tools…</div></div>
+    </div>
+  </section>
+
+  <section id="benefits" class="trust">
+    <div class="container">
+      <h2 class="section-title" data-i18n="trustTitle">Why Vorynex?</h2>
+      <div class="trust__grid" id="benefits-container"></div>
+    </div>
+  </section>
+
+  <section class="how-to-buy">
+    <div class="container">
+      <h2 class="section-title">How to <span class="text-gradient">Buy</span></h2>
+      <div class="steps-grid">
+        <div class="step-card"><span class="step-number">1</span><i class="fas fa-search step-icon"></i><h3 data-i18n="step1Title">Browse & Choose</h3><p data-i18n="step1Desc">Find the perfect tool.</p></div>
+        <div class="step-card"><span class="step-number">2</span><i class="fab fa-whatsapp step-icon"></i><h3 data-i18n="step2Title">Click "Buy on WhatsApp"</h3><p data-i18n="step2Desc">Pre-filled message opens.</p></div>
+        <div class="step-card"><span class="step-number">3</span><i class="fas fa-download step-icon"></i><h3 data-i18n="step3Title">Receive Instantly</h3><p data-i18n="step3Desc">Immediate digital access.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="testimonials">
+    <div class="container">
+      <h2 class="section-title"><span data-i18n="reviewsTitle1">What Our</span> <span class="text-gradient" data-i18n="reviewsTitle2">Customers</span> <span data-i18n="reviewsTitle3">Say</span></h2>
+      <div class="testimonials__track" id="testimonials-track"></div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+      <div class="faq__grid" id="faq-container"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="footer__logo-wrapper"><img src="assets/images/vorynex.png" alt="Vorynex" class="footer__logo"></div>
+      <p data-i18n="slogan">Digital tools. Built for execution.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/vorynexbusines/"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5511998447863"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:vorynexbusines@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer__links"><h4 data-i18n="navCatalog">Catalog</h4><a href="#">All Tools</a><a href="#">Blue Team</a><a href="#">Red Team</a><a href="#">Automation</a></div>
+    <div class="footer__links"><h4 data-i18n="navContact">Contact</h4><a href="https://wa.me/5511998447863">WhatsApp</a><a href="https://www.instagram.com/vorynexbusines/">Instagram</a><a href="mailto:vorynexbusines@gmail.com">Email</a><p data-i18n="footerAddress">São Paulo, SP – Brasil</p></div>
+    <div class="footer__links"><h4>Legal</h4><a href="pages/privacy.html" data-i18n="footerPrivacy">Privacy Policy</a><a href="pages/terms.html" data-i18n="footerTerms">Terms of Use</a></div>
+  </div>
+  <div class="container footer__legal">
+    <small data-i18n="footerRights">© Vorynex – Independent digital tools. All rights reserved.</small>
+    <small data-i18n="footerLicense">Products delivered under individual use license.</small>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
