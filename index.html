@@ -11,10 +11,13 @@
 </head>
 <body>
 
-<!-- Overlay do carrinho (escurece fundo) -->
+<!-- Overlay do menu mobile -->
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<!-- Overlay do carrinho -->
 <div class="cart-overlay" id="cart-overlay"></div>
 
-<!-- Carrinho lateral (desliza da direita) -->
+<!-- Carrinho lateral -->
 <div class="cart-sidebar" id="cart-sidebar">
   <div class="cart-header">
     <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
@@ -35,8 +38,14 @@
       <img src="assets/images/vorynex.png" alt="Vorynex" class="logo-image">
       <span class="logo-text" data-i18n="siteName">VORYNEX</span>
     </a>
+    
+    <!-- Botão hamburger -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
     <div class="header__right">
-      <nav class="nav">
+      <nav class="nav" id="nav-menu">
         <a href="#catalogo" class="nav__link" data-i18n="navCatalog">Catalog</a>
         <a href="#benefits" class="nav__link" data-i18n="navBenefits">Benefits</a>
         <a href="#reviews" class="nav__link">Reviews</a>
