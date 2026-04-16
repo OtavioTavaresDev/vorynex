@@ -105,7 +105,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   backdrop-filter: blur(4px);
   z-index: 150;
 }
-.nav-overlay.active { display: block; }
+.nav-overlay.active {  }
 
 /* Header right (desktop) */
 .header__right {
