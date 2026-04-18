@@ -59,4 +59,20 @@
       "ru": { "name": "CyberSec Scripts Bundle", "description": "Более 20 скриптов для анализа журналов, перечисления и автоматизации задач безопасности." }
     }
   }
+    ,
+  {
+    "id": "vx-billing",
+    "category": "saas",
+    "price": "$97",
+    "demo_link": "https://github.com/OtavioTavaresDev/vorynex-billing/releases",
+    "whatsapp_message_template": "Hello Vorynex, I want to purchase *Vorynex Billing* ($97). I await payment and delivery instructions.",
+    "translations": {
+      "en": { "name": "Vorynex Billing", "description": "Professional billing system and administrative dashboard. Desktop, offline-first. Manage clients, transactions, and metrics in real time." },
+      "pt": { "name": "Vorynex Billing", "description": "Sistema profissional de billing e dashboard administrativo. Desktop, offline-first. Gerencie clientes, transações e métricas em tempo real." },
+      "es": { "name": "Vorynex Billing", "description": "Sistema profesional de facturación y panel administrativo. Escritorio, offline-first. Gestione clientes, transacciones y métricas en tiempo real." },
+      "fr": { "name": "Vorynex Billing", "description": "Système professionnel de facturation et tableau de bord administratif. Desktop, offline-first. Gérez clients, transactions et métriques en temps réel." },
+      "it": { "name": "Vorynex Billing", "description": "Sistema professionale di fatturazione e dashboard amministrativa. Desktop, offline-first. Gestisci clienti, transazioni e metriche in tempo reale." },
+      "ru": { "name": "Vorynex Billing", "description": "Профессиональная система биллинга и административная панель. Десктоп, автономная работа. Управляйте клиентами, транзакциями и метриками в реальном времени." }
+    }
+  }
 ]

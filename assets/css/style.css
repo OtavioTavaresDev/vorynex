@@ -547,4 +547,22 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
   .hero__title {
     font-size: 2.2rem;
   }
+  /* Botão Demo */
+.btn--secondary {
+  background: transparent;
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn--secondary:hover {
+  background: rgba(0, 229, 255, 0.1);
+  border-color: #fff;
+  color: #fff;
+}
 }
