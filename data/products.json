@@ -2,26 +2,27 @@
   {
     "id": "vx-001",
     "category": "security",
-    "price": "$47",
+    "price": "€47",
     "type": "one-time",
     "tags": ["blue-team", "hardening", "monitoring"],
     "audience": "intermediate",
     "featured": true,
     "demo_link": "",
-    "whatsapp_message_template": "Hello Vorynex, I want to purchase *Blue Team Toolkit* ($47). I await payment and delivery instructions.",
+    "whatsapp_message_template": "Hello Vorynex, I want to purchase *Blue Team Toolkit* (€47). I await payment and delivery instructions.",
     "translations": {
       "en": { "name": "Blue Team Toolkit", "description": "Script and playbook collection for hardening, monitoring, and incident response." },
       "pt": { "name": "Kit Blue Team", "description": "Coleção de scripts e playbooks para hardening, monitoramento e resposta a incidentes." },
       "fr": { "name": "Kit Blue Team", "description": "Collection de scripts et playbooks pour le durcissement, la surveillance et la réponse aux incidents." },
       "es": { "name": "Kit Blue Team", "description": "Colección de scripts y playbooks para hardening, monitoreo y respuesta a incidentes." },
       "it": { "name": "Kit Blue Team", "description": "Raccolta di script e playbook per hardening, monitoraggio e risposta agli incidenti." },
-      "ru": { "name": "Blue Team Toolkit", "description": "Коллекция скриптов и сценариев для усиления защиты, мониторинга и реагирования на инциденты." }
+      "ru": { "name": "Blue Team Toolkit", "description": "Коллекция скриптов и сценариев для усиления защиты, мониторинга и реагирования на инциденты." },
+      "de": { "name": "Blue Team Toolkit", "description": "Skript- und Playbook-Sammlung für Härtung, Überwachung und Incident Response." }
     }
   },
   {
     "id": "vx-002",
     "category": "security",
-    "price": "$89",
+    "price": "€89",
     "type": "one-time",
     "tags": ["red-team", "opsec", "evasion"],
     "audience": "advanced",
@@ -34,32 +35,34 @@
       "fr": { "name": "Automatisation OPSEC Red Team", "description": "Outils automatisés pour la reconnaissance sécurisée et l'évasion EDR." },
       "es": { "name": "Automatización OPSEC Red Team", "description": "Herramientas automatizadas para reconocimiento seguro y evasión de EDR." },
       "it": { "name": "Automazione OPSEC Red Team", "description": "Strumenti automatizzati per ricognizione sicura ed evasione EDR." },
-      "ru": { "name": "Red Team OPSEC Automation", "description": "Автоматизированные инструменты для безопасной разведки и обхода EDR." }
+      "ru": { "name": "Red Team OPSEC Automation", "description": "Автоматизированные инструменты для безопасной разведки и обхода EDR." },
+      "de": { "name": "Red Team OPSEC Automation", "description": "Automatisierte Werkzeuge für sichere Aufklärung und EDR-Umgehung." }
     }
   },
   {
     "id": "vx-003",
     "category": "saas",
-    "price": "$19/mo",
+    "price": "€19/mo",
     "type": "subscription",
     "tags": ["saas", "monitoring", "threat-intel"],
     "audience": "b2b",
     "featured": false,
     "demo_link": "https://demo.vorynex.tech",
-    "whatsapp_message_template": "I'm interested in SaaS Monitor. Price: $19/mo. I'd like to activate my access.",
+    "whatsapp_message_template": "I'm interested in SaaS Monitor. Price: €19/mo. I'd like to activate my access.",
     "translations": {
       "en": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Lightweight dashboard for asset monitoring and real-time threat intelligence." },
       "pt": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Painel leve para monitoramento de ativos e inteligência de ameaças em tempo real." },
       "fr": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Tableau de bord léger pour la surveillance des actifs et le renseignement sur les menaces en temps réel." },
       "es": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Panel ligero para monitoreo de activos e inteligencia de amenazas en tiempo real." },
       "it": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Dashboard leggero per il monitoraggio degli asset e intelligence sulle minacce in tempo reale." },
-      "ru": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Легкая панель для мониторинга активов и анализа угроз в реальном времени." }
+      "ru": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Легкая панель для мониторинга активов и анализа угроз в реальном времени." },
+      "de": { "name": "SaaS Monitor · Uptime & Threat Intel", "description": "Leichtgewichtiges Dashboard für Asset-Monitoring und Echtzeit-Bedrohungsinformationen." }
     }
   },
   {
     "id": "vx-004",
     "category": "automation",
-    "price": "$37",
+    "price": "€37",
     "type": "one-time",
     "tags": ["automation", "scripts", "cybersec"],
     "audience": "intermediate",
@@ -72,26 +75,28 @@
       "fr": { "name": "Pack de scripts CyberSec", "description": "Plus de 20 scripts pour l'analyse de logs, l'énumération et l'automatisation des tâches de sécurité." },
       "es": { "name": "Paquete de Scripts CyberSec", "description": "Más de 20 scripts para análisis de logs, enumeración y automatización de tareas de seguridad." },
       "it": { "name": "Pacchetto Script CyberSec", "description": "Oltre 20 script per analisi dei log, enumerazione e automazione delle attività di sicurezza." },
-      "ru": { "name": "CyberSec Scripts Bundle", "description": "Более 20 скриптов для анализа журналов, перечисления и автоматизации задач безопасности." }
+      "ru": { "name": "CyberSec Scripts Bundle", "description": "Более 20 скриптов для анализа журналов, перечисления и автоматизации задач безопасности." },
+      "de": { "name": "CyberSec Scripts Bundle", "description": "20+ Skripte für Log-Analyse, Enumeration und Automatisierung von Sicherheitsaufgaben." }
     }
   },
   {
     "id": "vx-billing",
     "category": "saas",
-    "price": "$97",
+    "price": "€97",
     "type": "one-time",
     "tags": ["saas", "billing", "admin"],
     "audience": "b2b",
     "featured": true,
     "demo_link": "https://github.com/OtavioTavaresDev/vorynex-billing/releases",
-    "whatsapp_message_template": "Hello Vorynex, I want to purchase *Vorynex Billing* ($97). I await payment and delivery instructions.",
+    "whatsapp_message_template": "Hello Vorynex, I want to purchase *Vorynex Billing* (€97). I await payment and delivery instructions.",
     "translations": {
       "en": { "name": "Vorynex Billing", "description": "Professional billing system and administrative dashboard. Desktop, offline-first. Manage clients, transactions, and metrics in real time." },
       "pt": { "name": "Vorynex Billing", "description": "Sistema profissional de billing e dashboard administrativo. Desktop, offline-first. Gerencie clientes, transações e métricas em tempo real." },
       "es": { "name": "Vorynex Billing", "description": "Sistema profesional de facturación y panel administrativo. Escritorio, offline-first. Gestione clientes, transacciones y métricas en tiempo real." },
       "fr": { "name": "Vorynex Billing", "description": "Système professionnel de facturation et tableau de bord administratif. Desktop, offline-first. Gérez clients, transactions et métriques en temps réel." },
       "it": { "name": "Vorynex Billing", "description": "Sistema professionale di fatturazione e dashboard amministrativa. Desktop, offline-first. Gestisci clienti, transazioni e metriche in tempo reale." },
-      "ru": { "name": "Vorynex Billing", "description": "Профессиональная система биллинга и административная панель. Десктоп, автономная работа. Управляйте клиентами, транзакциями и метриками в реальном времени." }
+      "ru": { "name": "Vorynex Billing", "description": "Профессиональная система биллинга и административная панель. Десктоп, автономная работа. Управляйте клиентами, транзакциями и метриками в реальном времени." },
+      "de": { "name": "Vorynex Billing", "description": "Professionelles Abrechnungssystem und administratives Dashboard. Desktop, offline-first. Verwalten Sie Kunden, Transaktionen und Metriken in Echtzeit." }
     }
   },
   {
@@ -105,7 +110,10 @@
     "demo_link": "",
     "whatsapp_message_template": "Hello, I'd like to purchase Log Analyzer Pro (€9).",
     "translations": {
-      "en": { "name": "Log Analyzer Pro", "description": "Fast CLI tool to parse and highlight anomalies in syslog, auth.log, and web server logs." }
+      "en": { "name": "Log Analyzer Pro", "description": "Fast CLI tool to parse and highlight anomalies in syslog, auth.log, and web server logs." },
+      "pt": { "name": "Log Analyzer Pro", "description": "Ferramenta CLI rápida para analisar e destacar anomalias em logs syslog, auth.log e servidores web." },
+      "es": { "name": "Log Analyzer Pro", "description": "Herramienta CLI rápida para analizar y resaltar anomalías en syslog, auth.log y logs de servidores web." },
+      "de": { "name": "Log Analyzer Pro", "description": "Schnelles CLI-Tool zum Parsen und Hervorheben von Anomalien in Syslog, Auth.log und Webserver-Logs." }
     }
   },
   {
@@ -119,7 +127,10 @@
     "demo_link": "",
     "whatsapp_message_template": "Interested in Threat Feed Aggregator (€12).",
     "translations": {
-      "en": { "name": "Threat Feed Aggregator", "description": "Aggregate and deduplicate IOC feeds from 10+ open sources. Export to MISP or CSV." }
+      "en": { "name": "Threat Feed Aggregator", "description": "Aggregate and deduplicate IOC feeds from 10+ open sources. Export to MISP or CSV." },
+      "pt": { "name": "Threat Feed Aggregator", "description": "Agregue e deduplique feeds IOC de mais de 10 fontes abertas. Exporte para MISP ou CSV." },
+      "es": { "name": "Threat Feed Aggregator", "description": "Agregue y deduplique feeds IOC de más de 10 fuentes abiertas. Exporte a MISP o CSV." },
+      "de": { "name": "Threat Feed Aggregator", "description": "Aggregieren und deduplizieren Sie IOC-Feeds aus über 10 offenen Quellen. Export nach MISP oder CSV." }
     }
   },
   {
@@ -133,7 +144,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Windows Hardening Script Pack (€19).",
     "translations": {
-      "en": { "name": "Windows Hardening Script Pack", "description": "25+ PowerShell scripts to secure Windows 10/11 and Server 2019+ (CIS benchmarks)." }
+      "en": { "name": "Windows Hardening Script Pack", "description": "25+ PowerShell scripts to secure Windows 10/11 and Server 2019+ (CIS benchmarks)." },
+      "pt": { "name": "Windows Hardening Script Pack", "description": "Mais de 25 scripts PowerShell para proteger Windows 10/11 e Server 2019+ (benchmarks CIS)." },
+      "es": { "name": "Windows Hardening Script Pack", "description": "Más de 25 scripts PowerShell para proteger Windows 10/11 y Server 2019+ (benchmarks CIS)." },
+      "de": { "name": "Windows Hardening Script Pack", "description": "Über 25 PowerShell-Skripte zur Sicherung von Windows 10/11 und Server 2019+ (CIS-Benchmarks)." }
     }
   },
   {
@@ -147,7 +161,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Incident Response Playbook Bundle (€39).",
     "translations": {
-      "en": { "name": "Incident Response Playbook Bundle", "description": "8 detailed playbooks for ransomware, data exfiltration, and insider threats. Includes evidence collection scripts." }
+      "en": { "name": "Incident Response Playbook Bundle", "description": "8 detailed playbooks for ransomware, data exfiltration, and insider threats. Includes evidence collection scripts." },
+      "pt": { "name": "Incident Response Playbook Bundle", "description": "8 playbooks detalhados para ransomware, exfiltração de dados e ameaças internas. Inclui scripts de coleta de evidências." },
+      "es": { "name": "Incident Response Playbook Bundle", "description": "8 playbooks detallados para ransomware, exfiltración de datos y amenazas internas. Incluye scripts de recolección de evidencia." },
+      "de": { "name": "Incident Response Playbook Bundle", "description": "8 detaillierte Playbooks für Ransomware, Datenexfiltration und Insider-Bedrohungen. Enthält Skripte zur Beweissammlung." }
     }
   },
   {
@@ -161,7 +178,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Recon Automation Toolkit (€27).",
     "translations": {
-      "en": { "name": "Recon Automation Toolkit", "description": "Subdomain enumeration, port scanning, and screenshot pipeline using Docker." }
+      "en": { "name": "Recon Automation Toolkit", "description": "Subdomain enumeration, port scanning, and screenshot pipeline using Docker." },
+      "pt": { "name": "Recon Automation Toolkit", "description": "Enumeração de subdomínios, varredura de portas e pipeline de screenshots usando Docker." },
+      "es": { "name": "Recon Automation Toolkit", "description": "Enumeración de subdominios, escaneo de puertos y pipeline de capturas de pantalla usando Docker." },
+      "de": { "name": "Recon Automation Toolkit", "description": "Subdomain-Enumeration, Port-Scanning und Screenshot-Pipeline mit Docker." }
     }
   },
   {
@@ -175,7 +195,10 @@
     "demo_link": "",
     "whatsapp_message_template": "Interested in Phishing Simulation Toolkit (€34).",
     "translations": {
-      "en": { "name": "Phishing Simulation Toolkit", "description": "Pre-configured GoPhish templates and landing pages with tracking and reporting scripts." }
+      "en": { "name": "Phishing Simulation Toolkit", "description": "Pre-configured GoPhish templates and landing pages with tracking and reporting scripts." },
+      "pt": { "name": "Phishing Simulation Toolkit", "description": "Templates GoPhish pré-configurados e landing pages com scripts de rastreamento e relatórios." },
+      "es": { "name": "Phishing Simulation Toolkit", "description": "Plantillas GoPhish preconfiguradas y páginas de destino con scripts de seguimiento e informes." },
+      "de": { "name": "Phishing Simulation Toolkit", "description": "Vorkonfigurierte GoPhish-Vorlagen und Landing Pages mit Tracking- und Reporting-Skripten." }
     }
   },
   {
@@ -189,7 +212,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want C2 OPSEC Framework (€129).",
     "translations": {
-      "en": { "name": "C2 OPSEC Framework", "description": "Modular C2 with malleable profiles, traffic masking, and automatic infrastructure deployment." }
+      "en": { "name": "C2 OPSEC Framework", "description": "Modular C2 with malleable profiles, traffic masking, and automatic infrastructure deployment." },
+      "pt": { "name": "C2 OPSEC Framework", "description": "C2 modular com perfis maleáveis, mascaramento de tráfego e implantação automática de infraestrutura." },
+      "es": { "name": "C2 OPSEC Framework", "description": "C2 modular con perfiles maleables, enmascaramiento de tráfico e implementación automática de infraestructura." },
+      "de": { "name": "C2 OPSEC Framework", "description": "Modulares C2 mit anpassbaren Profilen, Traffic-Masking und automatischer Infrastruktur-Bereitstellung." }
     }
   },
   {
@@ -203,7 +229,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Cloud Enumeration Toolkit (€49).",
     "translations": {
-      "en": { "name": "Cloud Enumeration Toolkit", "description": "Scripts to discover misconfigured S3 buckets, Azure blobs, and GCP resources." }
+      "en": { "name": "Cloud Enumeration Toolkit", "description": "Scripts to discover misconfigured S3 buckets, Azure blobs, and GCP resources." },
+      "pt": { "name": "Cloud Enumeration Toolkit", "description": "Scripts para descobrir buckets S3 mal configurados, blobs Azure e recursos GCP." },
+      "es": { "name": "Cloud Enumeration Toolkit", "description": "Scripts para descubrir buckets S3 mal configurados, blobs Azure y recursos GCP." },
+      "de": { "name": "Cloud Enumeration Toolkit", "description": "Skripte zum Entdecken fehlkonfigurierter S3-Buckets, Azure-Blobs und GCP-Ressourcen." }
     }
   },
   {
@@ -217,7 +246,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Backup Health Monitor (€7).",
     "translations": {
-      "en": { "name": "Backup Health Monitor", "description": "Lightweight script to verify backup integrity and alert via email/Slack." }
+      "en": { "name": "Backup Health Monitor", "description": "Lightweight script to verify backup integrity and alert via email/Slack." },
+      "pt": { "name": "Backup Health Monitor", "description": "Script leve para verificar integridade de backups e alertar via email/Slack." },
+      "es": { "name": "Backup Health Monitor", "description": "Script ligero para verificar integridad de backups y alertar por email/Slack." },
+      "de": { "name": "Backup Health Monitor", "description": "Leichtgewichtiges Skript zur Überprüfung der Backup-Integrität und Alarmierung per E-Mail/Slack." }
     }
   },
   {
@@ -231,7 +263,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Deployment Automation Scripts (€14).",
     "translations": {
-      "en": { "name": "Deployment Automation Scripts", "description": "Collection of Bash and Python scripts to deploy web apps to VPS or Docker." }
+      "en": { "name": "Deployment Automation Scripts", "description": "Collection of Bash and Python scripts to deploy web apps to VPS or Docker." },
+      "pt": { "name": "Deployment Automation Scripts", "description": "Coleção de scripts Bash e Python para implantar web apps em VPS ou Docker." },
+      "es": { "name": "Deployment Automation Scripts", "description": "Colección de scripts Bash y Python para desplegar aplicaciones web en VPS o Docker." },
+      "de": { "name": "Deployment Automation Scripts", "description": "Sammlung von Bash- und Python-Skripten zum Bereitstellen von Web-Apps auf VPS oder Docker." }
     }
   },
   {
@@ -245,7 +280,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Vulnerability Patch Automator (€24).",
     "translations": {
-      "en": { "name": "Vulnerability Patch Automator", "description": "Ansible playbooks to automate security updates for Ubuntu/CentOS servers." }
+      "en": { "name": "Vulnerability Patch Automator", "description": "Ansible playbooks to automate security updates for Ubuntu/CentOS servers." },
+      "pt": { "name": "Vulnerability Patch Automator", "description": "Playbooks Ansible para automatizar atualizações de segurança em servidores Ubuntu/CentOS." },
+      "es": { "name": "Vulnerability Patch Automator", "description": "Playbooks Ansible para automatizar actualizaciones de seguridad en servidores Ubuntu/CentOS." },
+      "de": { "name": "Vulnerability Patch Automator", "description": "Ansible-Playbooks zur Automatisierung von Sicherheitsupdates für Ubuntu/CentOS-Server." }
     }
   },
   {
@@ -259,7 +297,10 @@
     "demo_link": "https://inventory.vorynex.tech/demo",
     "whatsapp_message_template": "I'm interested in Asset Inventory SaaS (€9/mo).",
     "translations": {
-      "en": { "name": "Asset Inventory SaaS", "description": "Centralized inventory of servers, domains, and software with expiration alerts." }
+      "en": { "name": "Asset Inventory SaaS", "description": "Centralized inventory of servers, domains, and software with expiration alerts." },
+      "pt": { "name": "Asset Inventory SaaS", "description": "Inventário centralizado de servidores, domínios e software com alertas de expiração." },
+      "es": { "name": "Asset Inventory SaaS", "description": "Inventario centralizado de servidores, dominios y software con alertas de caducidad." },
+      "de": { "name": "Asset Inventory SaaS", "description": "Zentralisiertes Inventar von Servern, Domains und Software mit Ablaufwarnungen." }
     }
   },
   {
@@ -273,7 +314,10 @@
     "demo_link": "https://notes.vorynex.tech",
     "whatsapp_message_template": "I want Secure Notes SaaS (€5/mo).",
     "translations": {
-      "en": { "name": "Secure Notes SaaS", "description": "End-to-end encrypted note taking with CLI and web access. Perfect for sensitive data." }
+      "en": { "name": "Secure Notes SaaS", "description": "End-to-end encrypted note taking with CLI and web access. Perfect for sensitive data." },
+      "pt": { "name": "Secure Notes SaaS", "description": "Anotações com criptografia ponta a ponta com acesso CLI e web. Perfeito para dados sensíveis." },
+      "es": { "name": "Secure Notes SaaS", "description": "Toma de notas con cifrado de extremo a extremo con acceso CLI y web. Perfecto para datos sensibles." },
+      "de": { "name": "Secure Notes SaaS", "description": "Ende-zu-Ende-verschlüsselte Notizen mit CLI- und Webzugriff. Perfekt für sensible Daten." }
     }
   },
   {
@@ -287,7 +331,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Freelance CRM Lite (€19).",
     "translations": {
-      "en": { "name": "Freelance CRM Lite", "description": "Airtable/Google Sheets based CRM template with invoice tracking and follow-up reminders." }
+      "en": { "name": "Freelance CRM Lite", "description": "Airtable/Google Sheets based CRM template with invoice tracking and follow-up reminders." },
+      "pt": { "name": "Freelance CRM Lite", "description": "Template CRM baseado em Airtable/Google Sheets com rastreamento de faturas e lembretes de acompanhamento." },
+      "es": { "name": "Freelance CRM Lite", "description": "Plantilla CRM basada en Airtable/Google Sheets con seguimiento de facturas y recordatorios." },
+      "de": { "name": "Freelance CRM Lite", "description": "Airtable/Google Sheets-basierte CRM-Vorlage mit Rechnungsverfolgung und Follow-up-Erinnerungen." }
     }
   },
   {
@@ -301,7 +348,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Invoice Generator Toolkit (€11).",
     "translations": {
-      "en": { "name": "Invoice Generator Toolkit", "description": "CLI tool to generate professional PDF invoices from JSON/YAML templates." }
+      "en": { "name": "Invoice Generator Toolkit", "description": "CLI tool to generate professional PDF invoices from JSON/YAML templates." },
+      "pt": { "name": "Invoice Generator Toolkit", "description": "Ferramenta CLI para gerar faturas PDF profissionais a partir de templates JSON/YAML." },
+      "es": { "name": "Invoice Generator Toolkit", "description": "Herramienta CLI para generar facturas PDF profesionales desde plantillas JSON/YAML." },
+      "de": { "name": "Invoice Generator Toolkit", "description": "CLI-Tool zur Generierung professioneller PDF-Rechnungen aus JSON/YAML-Vorlagen." }
     }
   },
   {
@@ -315,7 +365,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Project Metrics Dashboard (€29).",
     "translations": {
-      "en": { "name": "Project Metrics Dashboard", "description": "Self-hosted dashboard to track project health, budgets, and team velocity." }
+      "en": { "name": "Project Metrics Dashboard", "description": "Self-hosted dashboard to track project health, budgets, and team velocity." },
+      "pt": { "name": "Project Metrics Dashboard", "description": "Dashboard auto-hospedado para acompanhar saúde do projeto, orçamentos e velocidade da equipe." },
+      "es": { "name": "Project Metrics Dashboard", "description": "Panel autohospedado para realizar seguimiento de salud del proyecto, presupuestos y velocidad del equipo." },
+      "de": { "name": "Project Metrics Dashboard", "description": "Selbst gehostetes Dashboard zur Verfolgung von Projektzustand, Budgets und Teamgeschwindigkeit." }
     }
   },
   {
@@ -329,7 +382,10 @@
     "demo_link": "",
     "whatsapp_message_template": "I want Meeting Summarizer Script (€15).",
     "translations": {
-      "en": { "name": "Meeting Summarizer Script", "description": "Python script to transcribe audio (using Whisper) and generate concise meeting minutes." }
+      "en": { "name": "Meeting Summarizer Script", "description": "Python script to transcribe audio (using Whisper) and generate concise meeting minutes." },
+      "pt": { "name": "Meeting Summarizer Script", "description": "Script Python para transcrever áudio (usando Whisper) e gerar atas de reunião concisas." },
+      "es": { "name": "Meeting Summarizer Script", "description": "Script Python para transcribir audio (usando Whisper) y generar actas de reunión concisas." },
+      "de": { "name": "Meeting Summarizer Script", "description": "Python-Skript zur Audiotranskription (mit Whisper) und Erstellung präziser Besprechungsprotokolle." }
     }
   },
   {
@@ -343,10 +399,10 @@
     "included_products": ["rt-recon-automation", "bt-log-analyzer", "auto-vuln-patch"],
     "whatsapp_message_template": "I want the Beginner Pentest Kit bundle (€39).",
     "translations": {
-      "en": {
-        "name": "Beginner Pentest Kit",
-        "description": "Bundle: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Save 30%."
-      }
+      "en": { "name": "Beginner Pentest Kit", "description": "Bundle: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Save 30%." },
+      "pt": { "name": "Kit Pentest Iniciante", "description": "Pacote: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Economize 30%." },
+      "es": { "name": "Kit Pentest Principiante", "description": "Paquete: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Ahorra 30%." },
+      "de": { "name": "Beginner Pentest Kit", "description": "Bundle: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Sparen Sie 30%." }
     }
   },
   {
@@ -360,10 +416,10 @@
     "included_products": ["bt-windows-hardening", "auto-deploy-scripts", "rt-cloud-enum"],
     "whatsapp_message_template": "I want the Secure Infrastructure Kit bundle (€59).",
     "translations": {
-      "en": {
-        "name": "Secure Infrastructure Kit",
-        "description": "Bundle: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Save 25%."
-      }
+      "en": { "name": "Secure Infrastructure Kit", "description": "Bundle: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Save 25%." },
+      "pt": { "name": "Kit Infraestrutura Segura", "description": "Pacote: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Economize 25%." },
+      "es": { "name": "Kit Infraestructura Segura", "description": "Paquete: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Ahorra 25%." },
+      "de": { "name": "Secure Infrastructure Kit", "description": "Bundle: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Sparen Sie 25%." }
     }
   },
   {
@@ -377,10 +433,10 @@
     "included_products": ["auto-backup-mon", "biz-invoice-gen", "auto-deploy-scripts"],
     "whatsapp_message_template": "I want the Dev Automation Kit bundle (€44).",
     "translations": {
-      "en": {
-        "name": "Dev Automation Kit",
-        "description": "Bundle: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Save 28%."
-      }
+      "en": { "name": "Dev Automation Kit", "description": "Bundle: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Save 28%." },
+      "pt": { "name": "Kit Automação Dev", "description": "Pacote: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Economize 28%." },
+      "es": { "name": "Kit Automatización Dev", "description": "Paquete: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Ahorra 28%." },
+      "de": { "name": "Dev Automation Kit", "description": "Bundle: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Sparen Sie 28%." }
     }
   }
 ]
