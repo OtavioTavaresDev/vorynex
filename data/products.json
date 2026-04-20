@@ -113,6 +113,9 @@
       "en": { "name": "Log Analyzer Pro", "description": "Fast CLI tool to parse and highlight anomalies in syslog, auth.log, and web server logs." },
       "pt": { "name": "Log Analyzer Pro", "description": "Ferramenta CLI rápida para analisar e destacar anomalias em logs syslog, auth.log e servidores web." },
       "es": { "name": "Log Analyzer Pro", "description": "Herramienta CLI rápida para analizar y resaltar anomalías en syslog, auth.log y logs de servidores web." },
+      "fr": { "name": "Log Analyzer Pro", "description": "Outil CLI rapide pour analyser et mettre en évidence les anomalies dans syslog, auth.log et les logs de serveurs web." },
+      "it": { "name": "Log Analyzer Pro", "description": "Veloce strumento CLI per analizzare ed evidenziare anomalie in syslog, auth.log e log dei server web." },
+      "ru": { "name": "Log Analyzer Pro", "description": "Быстрый CLI-инструмент для разбора и выделения аномалий в syslog, auth.log и логах веб-сервера." },
       "de": { "name": "Log Analyzer Pro", "description": "Schnelles CLI-Tool zum Parsen und Hervorheben von Anomalien in Syslog, Auth.log und Webserver-Logs." }
     }
   },
@@ -130,6 +133,9 @@
       "en": { "name": "Threat Feed Aggregator", "description": "Aggregate and deduplicate IOC feeds from 10+ open sources. Export to MISP or CSV." },
       "pt": { "name": "Threat Feed Aggregator", "description": "Agregue e deduplique feeds IOC de mais de 10 fontes abertas. Exporte para MISP ou CSV." },
       "es": { "name": "Threat Feed Aggregator", "description": "Agregue y deduplique feeds IOC de más de 10 fuentes abiertas. Exporte a MISP o CSV." },
+      "fr": { "name": "Threat Feed Aggregator", "description": "Agrégez et dédupliquez les flux IOC de plus de 10 sources ouvertes. Exportez vers MISP ou CSV." },
+      "it": { "name": "Threat Feed Aggregator", "description": "Aggrega e deduplica feed IOC da oltre 10 fonti aperte. Esporta in MISP o CSV." },
+      "ru": { "name": "Threat Feed Aggregator", "description": "Агрегируйте и дедуплицируйте потоки IOC из более чем 10 открытых источников. Экспорт в MISP или CSV." },
       "de": { "name": "Threat Feed Aggregator", "description": "Aggregieren und deduplizieren Sie IOC-Feeds aus über 10 offenen Quellen. Export nach MISP oder CSV." }
     }
   },
@@ -147,6 +153,9 @@
       "en": { "name": "Windows Hardening Script Pack", "description": "25+ PowerShell scripts to secure Windows 10/11 and Server 2019+ (CIS benchmarks)." },
       "pt": { "name": "Windows Hardening Script Pack", "description": "Mais de 25 scripts PowerShell para proteger Windows 10/11 e Server 2019+ (benchmarks CIS)." },
       "es": { "name": "Windows Hardening Script Pack", "description": "Más de 25 scripts PowerShell para proteger Windows 10/11 y Server 2019+ (benchmarks CIS)." },
+      "fr": { "name": "Windows Hardening Script Pack", "description": "Plus de 25 scripts PowerShell pour sécuriser Windows 10/11 et Server 2019+ (benchmarks CIS)." },
+      "it": { "name": "Windows Hardening Script Pack", "description": "Oltre 25 script PowerShell per proteggere Windows 10/11 e Server 2019+ (benchmark CIS)." },
+      "ru": { "name": "Windows Hardening Script Pack", "description": "Более 25 скриптов PowerShell для защиты Windows 10/11 и Server 2019+ (CIS benchmarks)." },
       "de": { "name": "Windows Hardening Script Pack", "description": "Über 25 PowerShell-Skripte zur Sicherung von Windows 10/11 und Server 2019+ (CIS-Benchmarks)." }
     }
   },
@@ -164,6 +173,9 @@
       "en": { "name": "Incident Response Playbook Bundle", "description": "8 detailed playbooks for ransomware, data exfiltration, and insider threats. Includes evidence collection scripts." },
       "pt": { "name": "Incident Response Playbook Bundle", "description": "8 playbooks detalhados para ransomware, exfiltração de dados e ameaças internas. Inclui scripts de coleta de evidências." },
       "es": { "name": "Incident Response Playbook Bundle", "description": "8 playbooks detallados para ransomware, exfiltración de datos y amenazas internas. Incluye scripts de recolección de evidencia." },
+      "fr": { "name": "Incident Response Playbook Bundle", "description": "8 playbooks détaillés pour ransomware, exfiltration de données et menaces internes. Inclut des scripts de collecte de preuves." },
+      "it": { "name": "Incident Response Playbook Bundle", "description": "8 playbook dettagliati per ransomware, esfiltrazione di dati e minacce interne. Include script di raccolta delle prove." },
+      "ru": { "name": "Incident Response Playbook Bundle", "description": "8 подробных сценариев для борьбы с программами-вымогателями, утечкой данных и внутренними угрозами. Включает скрипты для сбора доказательств." },
       "de": { "name": "Incident Response Playbook Bundle", "description": "8 detaillierte Playbooks für Ransomware, Datenexfiltration und Insider-Bedrohungen. Enthält Skripte zur Beweissammlung." }
     }
   },
@@ -181,6 +193,9 @@
       "en": { "name": "Recon Automation Toolkit", "description": "Subdomain enumeration, port scanning, and screenshot pipeline using Docker." },
       "pt": { "name": "Recon Automation Toolkit", "description": "Enumeração de subdomínios, varredura de portas e pipeline de screenshots usando Docker." },
       "es": { "name": "Recon Automation Toolkit", "description": "Enumeración de subdominios, escaneo de puertos y pipeline de capturas de pantalla usando Docker." },
+      "fr": { "name": "Recon Automation Toolkit", "description": "Énumération de sous-domaines, scan de ports et pipeline de captures d'écran avec Docker." },
+      "it": { "name": "Recon Automation Toolkit", "description": "Enumerazione di sottodomini, scansione delle porte e pipeline di screenshot con Docker." },
+      "ru": { "name": "Recon Automation Toolkit", "description": "Перечисление поддоменов, сканирование портов и конвейер скриншотов с использованием Docker." },
       "de": { "name": "Recon Automation Toolkit", "description": "Subdomain-Enumeration, Port-Scanning und Screenshot-Pipeline mit Docker." }
     }
   },
@@ -198,6 +213,9 @@
       "en": { "name": "Phishing Simulation Toolkit", "description": "Pre-configured GoPhish templates and landing pages with tracking and reporting scripts." },
       "pt": { "name": "Phishing Simulation Toolkit", "description": "Templates GoPhish pré-configurados e landing pages com scripts de rastreamento e relatórios." },
       "es": { "name": "Phishing Simulation Toolkit", "description": "Plantillas GoPhish preconfiguradas y páginas de destino con scripts de seguimiento e informes." },
+      "fr": { "name": "Phishing Simulation Toolkit", "description": "Modèles GoPhish préconfigurés et pages de destination avec scripts de suivi et de reporting." },
+      "it": { "name": "Phishing Simulation Toolkit", "description": "Modelli GoPhish preconfigurati e pagine di destinazione con script di monitoraggio e reporting." },
+      "ru": { "name": "Phishing Simulation Toolkit", "description": "Предварительно настроенные шаблоны GoPhish и целевые страницы со скриптами отслеживания и отчетности." },
       "de": { "name": "Phishing Simulation Toolkit", "description": "Vorkonfigurierte GoPhish-Vorlagen und Landing Pages mit Tracking- und Reporting-Skripten." }
     }
   },
@@ -215,6 +233,9 @@
       "en": { "name": "C2 OPSEC Framework", "description": "Modular C2 with malleable profiles, traffic masking, and automatic infrastructure deployment." },
       "pt": { "name": "C2 OPSEC Framework", "description": "C2 modular com perfis maleáveis, mascaramento de tráfego e implantação automática de infraestrutura." },
       "es": { "name": "C2 OPSEC Framework", "description": "C2 modular con perfiles maleables, enmascaramiento de tráfico e implementación automática de infraestructura." },
+      "fr": { "name": "C2 OPSEC Framework", "description": "C2 modulaire avec profils malléables, masquage de trafic et déploiement automatique de l'infrastructure." },
+      "it": { "name": "C2 OPSEC Framework", "description": "C2 modulare con profili adattabili, mascheramento del traffico e distribuzione automatica dell'infrastruttura." },
+      "ru": { "name": "C2 OPSEC Framework", "description": "Модульный C2 с изменяемыми профилями, маскировкой трафика и автоматическим развертыванием инфраструктуры." },
       "de": { "name": "C2 OPSEC Framework", "description": "Modulares C2 mit anpassbaren Profilen, Traffic-Masking und automatischer Infrastruktur-Bereitstellung." }
     }
   },
@@ -232,6 +253,9 @@
       "en": { "name": "Cloud Enumeration Toolkit", "description": "Scripts to discover misconfigured S3 buckets, Azure blobs, and GCP resources." },
       "pt": { "name": "Cloud Enumeration Toolkit", "description": "Scripts para descobrir buckets S3 mal configurados, blobs Azure e recursos GCP." },
       "es": { "name": "Cloud Enumeration Toolkit", "description": "Scripts para descubrir buckets S3 mal configurados, blobs Azure y recursos GCP." },
+      "fr": { "name": "Cloud Enumeration Toolkit", "description": "Scripts pour découvrir les buckets S3 mal configurés, les blobs Azure et les ressources GCP." },
+      "it": { "name": "Cloud Enumeration Toolkit", "description": "Script per scoprire bucket S3 mal configurati, blob Azure e risorse GCP." },
+      "ru": { "name": "Cloud Enumeration Toolkit", "description": "Скрипты для обнаружения неправильно настроенных сегментов S3, больших двоичных объектов Azure и ресурсов GCP." },
       "de": { "name": "Cloud Enumeration Toolkit", "description": "Skripte zum Entdecken fehlkonfigurierter S3-Buckets, Azure-Blobs und GCP-Ressourcen." }
     }
   },
@@ -249,6 +273,9 @@
       "en": { "name": "Backup Health Monitor", "description": "Lightweight script to verify backup integrity and alert via email/Slack." },
       "pt": { "name": "Backup Health Monitor", "description": "Script leve para verificar integridade de backups e alertar via email/Slack." },
       "es": { "name": "Backup Health Monitor", "description": "Script ligero para verificar integridad de backups y alertar por email/Slack." },
+      "fr": { "name": "Backup Health Monitor", "description": "Script léger pour vérifier l'intégrité des sauvegardes et alerter par email/Slack." },
+      "it": { "name": "Backup Health Monitor", "description": "Script leggero per verificare l'integrità dei backup e inviare avvisi via email/Slack." },
+      "ru": { "name": "Backup Health Monitor", "description": "Легкий скрипт для проверки целостности резервных копий и отправки оповещений по email/Slack." },
       "de": { "name": "Backup Health Monitor", "description": "Leichtgewichtiges Skript zur Überprüfung der Backup-Integrität und Alarmierung per E-Mail/Slack." }
     }
   },
@@ -266,6 +293,9 @@
       "en": { "name": "Deployment Automation Scripts", "description": "Collection of Bash and Python scripts to deploy web apps to VPS or Docker." },
       "pt": { "name": "Deployment Automation Scripts", "description": "Coleção de scripts Bash e Python para implantar web apps em VPS ou Docker." },
       "es": { "name": "Deployment Automation Scripts", "description": "Colección de scripts Bash y Python para desplegar aplicaciones web en VPS o Docker." },
+      "fr": { "name": "Deployment Automation Scripts", "description": "Collection de scripts Bash et Python pour déployer des applications web sur VPS ou Docker." },
+      "it": { "name": "Deployment Automation Scripts", "description": "Raccolta di script Bash e Python per distribuire applicazioni web su VPS o Docker." },
+      "ru": { "name": "Deployment Automation Scripts", "description": "Коллекция скриптов Bash и Python для развертывания веб-приложений на VPS или Docker." },
       "de": { "name": "Deployment Automation Scripts", "description": "Sammlung von Bash- und Python-Skripten zum Bereitstellen von Web-Apps auf VPS oder Docker." }
     }
   },
@@ -283,6 +313,9 @@
       "en": { "name": "Vulnerability Patch Automator", "description": "Ansible playbooks to automate security updates for Ubuntu/CentOS servers." },
       "pt": { "name": "Vulnerability Patch Automator", "description": "Playbooks Ansible para automatizar atualizações de segurança em servidores Ubuntu/CentOS." },
       "es": { "name": "Vulnerability Patch Automator", "description": "Playbooks Ansible para automatizar actualizaciones de seguridad en servidores Ubuntu/CentOS." },
+      "fr": { "name": "Vulnerability Patch Automator", "description": "Playbooks Ansible pour automatiser les mises à jour de sécurité des serveurs Ubuntu/CentOS." },
+      "it": { "name": "Vulnerability Patch Automator", "description": "Playbook Ansible per automatizzare gli aggiornamenti di sicurezza per server Ubuntu/CentOS." },
+      "ru": { "name": "Vulnerability Patch Automator", "description": "Сценарии Ansible для автоматизации обновлений безопасности серверов Ubuntu/CentOS." },
       "de": { "name": "Vulnerability Patch Automator", "description": "Ansible-Playbooks zur Automatisierung von Sicherheitsupdates für Ubuntu/CentOS-Server." }
     }
   },
@@ -300,6 +333,9 @@
       "en": { "name": "Asset Inventory SaaS", "description": "Centralized inventory of servers, domains, and software with expiration alerts." },
       "pt": { "name": "Asset Inventory SaaS", "description": "Inventário centralizado de servidores, domínios e software com alertas de expiração." },
       "es": { "name": "Asset Inventory SaaS", "description": "Inventario centralizado de servidores, dominios y software con alertas de caducidad." },
+      "fr": { "name": "Asset Inventory SaaS", "description": "Inventaire centralisé des serveurs, domaines et logiciels avec alertes d'expiration." },
+      "it": { "name": "Asset Inventory SaaS", "description": "Inventario centralizzato di server, domini e software con avvisi di scadenza." },
+      "ru": { "name": "Asset Inventory SaaS", "description": "Централизованная инвентаризация серверов, доменов и программного обеспечения с оповещениями об истечении срока действия." },
       "de": { "name": "Asset Inventory SaaS", "description": "Zentralisiertes Inventar von Servern, Domains und Software mit Ablaufwarnungen." }
     }
   },
@@ -317,6 +353,9 @@
       "en": { "name": "Secure Notes SaaS", "description": "End-to-end encrypted note taking with CLI and web access. Perfect for sensitive data." },
       "pt": { "name": "Secure Notes SaaS", "description": "Anotações com criptografia ponta a ponta com acesso CLI e web. Perfeito para dados sensíveis." },
       "es": { "name": "Secure Notes SaaS", "description": "Toma de notas con cifrado de extremo a extremo con acceso CLI y web. Perfecto para datos sensibles." },
+      "fr": { "name": "Secure Notes SaaS", "description": "Prise de notes chiffrée de bout en bout avec accès CLI et web. Parfait pour les données sensibles." },
+      "it": { "name": "Secure Notes SaaS", "description": "Appunti crittografati end-to-end con accesso CLI e web. Perfetto per dati sensibili." },
+      "ru": { "name": "Secure Notes SaaS", "description": "Сквозное шифрование заметок с доступом через CLI и веб. Идеально для конфиденциальных данных." },
       "de": { "name": "Secure Notes SaaS", "description": "Ende-zu-Ende-verschlüsselte Notizen mit CLI- und Webzugriff. Perfekt für sensible Daten." }
     }
   },
@@ -334,6 +373,9 @@
       "en": { "name": "Freelance CRM Lite", "description": "Airtable/Google Sheets based CRM template with invoice tracking and follow-up reminders." },
       "pt": { "name": "Freelance CRM Lite", "description": "Template CRM baseado em Airtable/Google Sheets com rastreamento de faturas e lembretes de acompanhamento." },
       "es": { "name": "Freelance CRM Lite", "description": "Plantilla CRM basada en Airtable/Google Sheets con seguimiento de facturas y recordatorios." },
+      "fr": { "name": "Freelance CRM Lite", "description": "Modèle CRM basé sur Airtable/Google Sheets avec suivi des factures et rappels de suivi." },
+      "it": { "name": "Freelance CRM Lite", "description": "Modello CRM basato su Airtable/Google Sheets con monitoraggio delle fatture e promemoria di follow-up." },
+      "ru": { "name": "Freelance CRM Lite", "description": "Шаблон CRM на базе Airtable/Google Sheets с отслеживанием счетов и напоминаниями." },
       "de": { "name": "Freelance CRM Lite", "description": "Airtable/Google Sheets-basierte CRM-Vorlage mit Rechnungsverfolgung und Follow-up-Erinnerungen." }
     }
   },
@@ -351,6 +393,9 @@
       "en": { "name": "Invoice Generator Toolkit", "description": "CLI tool to generate professional PDF invoices from JSON/YAML templates." },
       "pt": { "name": "Invoice Generator Toolkit", "description": "Ferramenta CLI para gerar faturas PDF profissionais a partir de templates JSON/YAML." },
       "es": { "name": "Invoice Generator Toolkit", "description": "Herramienta CLI para generar facturas PDF profesionales desde plantillas JSON/YAML." },
+      "fr": { "name": "Invoice Generator Toolkit", "description": "Outil CLI pour générer des factures PDF professionnelles à partir de modèles JSON/YAML." },
+      "it": { "name": "Invoice Generator Toolkit", "description": "Strumento CLI per generare fatture PDF professionali da modelli JSON/YAML." },
+      "ru": { "name": "Invoice Generator Toolkit", "description": "Инструмент CLI для создания профессиональных PDF-счетов из шаблонов JSON/YAML." },
       "de": { "name": "Invoice Generator Toolkit", "description": "CLI-Tool zur Generierung professioneller PDF-Rechnungen aus JSON/YAML-Vorlagen." }
     }
   },
@@ -368,6 +413,9 @@
       "en": { "name": "Project Metrics Dashboard", "description": "Self-hosted dashboard to track project health, budgets, and team velocity." },
       "pt": { "name": "Project Metrics Dashboard", "description": "Dashboard auto-hospedado para acompanhar saúde do projeto, orçamentos e velocidade da equipe." },
       "es": { "name": "Project Metrics Dashboard", "description": "Panel autohospedado para realizar seguimiento de salud del proyecto, presupuestos y velocidad del equipo." },
+      "fr": { "name": "Project Metrics Dashboard", "description": "Tableau de bord auto-hébergé pour suivre la santé du projet, les budgets et la vélocité de l'équipe." },
+      "it": { "name": "Project Metrics Dashboard", "description": "Dashboard self-hosted per monitorare lo stato del progetto, i budget e la velocità del team." },
+      "ru": { "name": "Project Metrics Dashboard", "description": "Самостоятельно размещаемая панель для отслеживания состояния проекта, бюджетов и скорости команды." },
       "de": { "name": "Project Metrics Dashboard", "description": "Selbst gehostetes Dashboard zur Verfolgung von Projektzustand, Budgets und Teamgeschwindigkeit." }
     }
   },
@@ -385,6 +433,9 @@
       "en": { "name": "Meeting Summarizer Script", "description": "Python script to transcribe audio (using Whisper) and generate concise meeting minutes." },
       "pt": { "name": "Meeting Summarizer Script", "description": "Script Python para transcrever áudio (usando Whisper) e gerar atas de reunião concisas." },
       "es": { "name": "Meeting Summarizer Script", "description": "Script Python para transcribir audio (usando Whisper) y generar actas de reunión concisas." },
+      "fr": { "name": "Meeting Summarizer Script", "description": "Script Python pour transcrire l'audio (avec Whisper) et générer des comptes rendus de réunion concis." },
+      "it": { "name": "Meeting Summarizer Script", "description": "Script Python per trascrivere l'audio (usando Whisper) e generare verbali di riunione concisi." },
+      "ru": { "name": "Meeting Summarizer Script", "description": "Скрипт Python для транскрибирования аудио (с помощью Whisper) и создания кратких протоколов встреч." },
       "de": { "name": "Meeting Summarizer Script", "description": "Python-Skript zur Audiotranskription (mit Whisper) und Erstellung präziser Besprechungsprotokolle." }
     }
   },
@@ -402,6 +453,9 @@
       "en": { "name": "Beginner Pentest Kit", "description": "Bundle: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Save 30%." },
       "pt": { "name": "Kit Pentest Iniciante", "description": "Pacote: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Economize 30%." },
       "es": { "name": "Kit Pentest Principiante", "description": "Paquete: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Ahorra 30%." },
+      "fr": { "name": "Kit Pentest Débutant", "description": "Pack : Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Économisez 30%." },
+      "it": { "name": "Kit Pentest Principiante", "description": "Pacchetto: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Risparmia il 30%." },
+      "ru": { "name": "Beginner Pentest Kit", "description": "Комплект: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Экономия 30%." },
       "de": { "name": "Beginner Pentest Kit", "description": "Bundle: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Sparen Sie 30%." }
     }
   },
@@ -419,6 +473,9 @@
       "en": { "name": "Secure Infrastructure Kit", "description": "Bundle: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Save 25%." },
       "pt": { "name": "Kit Infraestrutura Segura", "description": "Pacote: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Economize 25%." },
       "es": { "name": "Kit Infraestructura Segura", "description": "Paquete: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Ahorra 25%." },
+      "fr": { "name": "Kit Infrastructure Sécurisée", "description": "Pack : Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Économisez 25%." },
+      "it": { "name": "Kit Infrastruttura Sicura", "description": "Pacchetto: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Risparmia il 25%." },
+      "ru": { "name": "Secure Infrastructure Kit", "description": "Комплект: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Экономия 25%." },
       "de": { "name": "Secure Infrastructure Kit", "description": "Bundle: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Sparen Sie 25%." }
     }
   },
@@ -436,6 +493,9 @@
       "en": { "name": "Dev Automation Kit", "description": "Bundle: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Save 28%." },
       "pt": { "name": "Kit Automação Dev", "description": "Pacote: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Economize 28%." },
       "es": { "name": "Kit Automatización Dev", "description": "Paquete: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Ahorra 28%." },
+      "fr": { "name": "Kit Automatisation Dev", "description": "Pack : Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Économisez 28%." },
+      "it": { "name": "Kit Automazione Dev", "description": "Pacchetto: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Risparmia il 28%." },
+      "ru": { "name": "Dev Automation Kit", "description": "Комплект: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Экономия 28%." },
       "de": { "name": "Dev Automation Kit", "description": "Bundle: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Sparen Sie 28%." }
     }
   }
