@@ -3,7 +3,7 @@
 
   const WHATSAPP_NUMBER = '5511998447863';
   const RESELLER_FEE = 200; // Taxa de revenda em dólares
-  const SUPPORTED_LANGS = ['en', 'pt', 'fr', 'es', 'it', 'ru'];
+  const SUPPORTED_LANGS = ['en', 'pt', 'fr', 'es', 'it', 'ru', 'de'];
   let currentLang = 'en';
   let translations = {};
   let products = [];
