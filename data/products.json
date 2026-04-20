@@ -3,6 +3,10 @@
     "id": "vx-001",
     "category": "security",
     "price": "$47",
+    "type": "one-time",
+    "tags": ["blue-team", "hardening", "monitoring"],
+    "audience": "intermediate",
+    "featured": true,
     "demo_link": "",
     "whatsapp_message_template": "Hello Vorynex, I want to purchase *Blue Team Toolkit* ($47). I await payment and delivery instructions.",
     "translations": {
@@ -18,6 +22,10 @@
     "id": "vx-002",
     "category": "security",
     "price": "$89",
+    "type": "one-time",
+    "tags": ["red-team", "opsec", "evasion"],
+    "audience": "advanced",
+    "featured": true,
     "demo_link": "https://vorynex.github.io/demo/redteam-preview",
     "whatsapp_message_template": "",
     "translations": {
@@ -33,6 +41,10 @@
     "id": "vx-003",
     "category": "saas",
     "price": "$19/mo",
+    "type": "subscription",
+    "tags": ["saas", "monitoring", "threat-intel"],
+    "audience": "b2b",
+    "featured": false,
     "demo_link": "https://demo.vorynex.tech",
     "whatsapp_message_template": "I'm interested in SaaS Monitor. Price: $19/mo. I'd like to activate my access.",
     "translations": {
@@ -48,6 +60,10 @@
     "id": "vx-004",
     "category": "automation",
     "price": "$37",
+    "type": "one-time",
+    "tags": ["automation", "scripts", "cybersec"],
+    "audience": "intermediate",
+    "featured": false,
     "demo_link": "",
     "whatsapp_message_template": "",
     "translations": {
@@ -58,12 +74,15 @@
       "it": { "name": "Pacchetto Script CyberSec", "description": "Oltre 20 script per analisi dei log, enumerazione e automazione delle attività di sicurezza." },
       "ru": { "name": "CyberSec Scripts Bundle", "description": "Более 20 скриптов для анализа журналов, перечисления и автоматизации задач безопасности." }
     }
-  }
-    ,
+  },
   {
     "id": "vx-billing",
     "category": "saas",
     "price": "$97",
+    "type": "one-time",
+    "tags": ["saas", "billing", "admin"],
+    "audience": "b2b",
+    "featured": true,
     "demo_link": "https://github.com/OtavioTavaresDev/vorynex-billing/releases",
     "whatsapp_message_template": "Hello Vorynex, I want to purchase *Vorynex Billing* ($97). I await payment and delivery instructions.",
     "translations": {
@@ -73,6 +92,295 @@
       "fr": { "name": "Vorynex Billing", "description": "Système professionnel de facturation et tableau de bord administratif. Desktop, offline-first. Gérez clients, transactions et métriques en temps réel." },
       "it": { "name": "Vorynex Billing", "description": "Sistema professionale di fatturazione e dashboard amministrativa. Desktop, offline-first. Gestisci clienti, transazioni e metriche in tempo reale." },
       "ru": { "name": "Vorynex Billing", "description": "Профессиональная система биллинга и административная панель. Десктоп, автономная работа. Управляйте клиентами, транзакциями и метриками в реальном времени." }
+    }
+  },
+  {
+    "id": "bt-log-analyzer",
+    "category": "blue",
+    "price": "€9",
+    "type": "one-time",
+    "tags": ["log-analysis", "siem", "forensics"],
+    "audience": "beginner",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "Hello, I'd like to purchase Log Analyzer Pro (€9).",
+    "translations": {
+      "en": { "name": "Log Analyzer Pro", "description": "Fast CLI tool to parse and highlight anomalies in syslog, auth.log, and web server logs." }
+    }
+  },
+  {
+    "id": "bt-threat-feed",
+    "category": "blue",
+    "price": "€12",
+    "type": "one-time",
+    "tags": ["threat-intel", "feeds", "indicators"],
+    "audience": "intermediate",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "Interested in Threat Feed Aggregator (€12).",
+    "translations": {
+      "en": { "name": "Threat Feed Aggregator", "description": "Aggregate and deduplicate IOC feeds from 10+ open sources. Export to MISP or CSV." }
+    }
+  },
+  {
+    "id": "bt-windows-hardening",
+    "category": "blue",
+    "price": "€19",
+    "type": "one-time",
+    "tags": ["windows", "hardening", "powershell"],
+    "audience": "intermediate",
+    "featured": true,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Windows Hardening Script Pack (€19).",
+    "translations": {
+      "en": { "name": "Windows Hardening Script Pack", "description": "25+ PowerShell scripts to secure Windows 10/11 and Server 2019+ (CIS benchmarks)." }
+    }
+  },
+  {
+    "id": "bt-incident-responder",
+    "category": "blue",
+    "price": "€39",
+    "type": "one-time",
+    "tags": ["incident-response", "playbooks", "forensics"],
+    "audience": "advanced",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Incident Response Playbook Bundle (€39).",
+    "translations": {
+      "en": { "name": "Incident Response Playbook Bundle", "description": "8 detailed playbooks for ransomware, data exfiltration, and insider threats. Includes evidence collection scripts." }
+    }
+  },
+  {
+    "id": "rt-recon-automation",
+    "category": "red",
+    "price": "€27",
+    "type": "one-time",
+    "tags": ["recon", "osint", "subdomain"],
+    "audience": "beginner",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Recon Automation Toolkit (€27).",
+    "translations": {
+      "en": { "name": "Recon Automation Toolkit", "description": "Subdomain enumeration, port scanning, and screenshot pipeline using Docker." }
+    }
+  },
+  {
+    "id": "rt-phishing-sim",
+    "category": "red",
+    "price": "€34",
+    "type": "one-time",
+    "tags": ["phishing", "awareness", "gophish"],
+    "audience": "intermediate",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "Interested in Phishing Simulation Toolkit (€34).",
+    "translations": {
+      "en": { "name": "Phishing Simulation Toolkit", "description": "Pre-configured GoPhish templates and landing pages with tracking and reporting scripts." }
+    }
+  },
+  {
+    "id": "rt-c2-framework",
+    "category": "red",
+    "price": "€129",
+    "type": "one-time",
+    "tags": ["c2", "red-team", "evasion"],
+    "audience": "advanced",
+    "featured": true,
+    "demo_link": "",
+    "whatsapp_message_template": "I want C2 OPSEC Framework (€129).",
+    "translations": {
+      "en": { "name": "C2 OPSEC Framework", "description": "Modular C2 with malleable profiles, traffic masking, and automatic infrastructure deployment." }
+    }
+  },
+  {
+    "id": "rt-cloud-enum",
+    "category": "red",
+    "price": "€49",
+    "type": "one-time",
+    "tags": ["cloud", "aws", "azure", "enumeration"],
+    "audience": "intermediate",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Cloud Enumeration Toolkit (€49).",
+    "translations": {
+      "en": { "name": "Cloud Enumeration Toolkit", "description": "Scripts to discover misconfigured S3 buckets, Azure blobs, and GCP resources." }
+    }
+  },
+  {
+    "id": "auto-backup-mon",
+    "category": "automation",
+    "price": "€7",
+    "type": "one-time",
+    "tags": ["backup", "monitoring", "bash"],
+    "audience": "beginner",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Backup Health Monitor (€7).",
+    "translations": {
+      "en": { "name": "Backup Health Monitor", "description": "Lightweight script to verify backup integrity and alert via email/Slack." }
+    }
+  },
+  {
+    "id": "auto-deploy-scripts",
+    "category": "automation",
+    "price": "€14",
+    "type": "one-time",
+    "tags": ["deployment", "ci-cd", "docker"],
+    "audience": "intermediate",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Deployment Automation Scripts (€14).",
+    "translations": {
+      "en": { "name": "Deployment Automation Scripts", "description": "Collection of Bash and Python scripts to deploy web apps to VPS or Docker." }
+    }
+  },
+  {
+    "id": "auto-vuln-patch",
+    "category": "automation",
+    "price": "€24",
+    "type": "one-time",
+    "tags": ["vulnerability", "patching", "ansible"],
+    "audience": "intermediate",
+    "featured": true,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Vulnerability Patch Automator (€24).",
+    "translations": {
+      "en": { "name": "Vulnerability Patch Automator", "description": "Ansible playbooks to automate security updates for Ubuntu/CentOS servers." }
+    }
+  },
+  {
+    "id": "saas-inventory",
+    "category": "saas",
+    "price": "€9/mo",
+    "type": "subscription",
+    "tags": ["saas", "asset-management", "inventory"],
+    "audience": "b2b",
+    "featured": false,
+    "demo_link": "https://inventory.vorynex.tech/demo",
+    "whatsapp_message_template": "I'm interested in Asset Inventory SaaS (€9/mo).",
+    "translations": {
+      "en": { "name": "Asset Inventory SaaS", "description": "Centralized inventory of servers, domains, and software with expiration alerts." }
+    }
+  },
+  {
+    "id": "saas-secure-notes",
+    "category": "saas",
+    "price": "€5/mo",
+    "type": "subscription",
+    "tags": ["notes", "encryption", "productivity"],
+    "audience": "beginner",
+    "featured": false,
+    "demo_link": "https://notes.vorynex.tech",
+    "whatsapp_message_template": "I want Secure Notes SaaS (€5/mo).",
+    "translations": {
+      "en": { "name": "Secure Notes SaaS", "description": "End-to-end encrypted note taking with CLI and web access. Perfect for sensitive data." }
+    }
+  },
+  {
+    "id": "biz-freelance-crm",
+    "category": "business",
+    "price": "€19",
+    "type": "one-time",
+    "tags": ["crm", "freelance", "clients"],
+    "audience": "beginner",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Freelance CRM Lite (€19).",
+    "translations": {
+      "en": { "name": "Freelance CRM Lite", "description": "Airtable/Google Sheets based CRM template with invoice tracking and follow-up reminders." }
+    }
+  },
+  {
+    "id": "biz-invoice-gen",
+    "category": "business",
+    "price": "€11",
+    "type": "one-time",
+    "tags": ["invoicing", "pdf", "automation"],
+    "audience": "beginner",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Invoice Generator Toolkit (€11).",
+    "translations": {
+      "en": { "name": "Invoice Generator Toolkit", "description": "CLI tool to generate professional PDF invoices from JSON/YAML templates." }
+    }
+  },
+  {
+    "id": "biz-project-dash",
+    "category": "business",
+    "price": "€29",
+    "type": "one-time",
+    "tags": ["dashboard", "metrics", "kpi"],
+    "audience": "intermediate",
+    "featured": true,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Project Metrics Dashboard (€29).",
+    "translations": {
+      "en": { "name": "Project Metrics Dashboard", "description": "Self-hosted dashboard to track project health, budgets, and team velocity." }
+    }
+  },
+  {
+    "id": "biz-meeting-summarizer",
+    "category": "business",
+    "price": "€15",
+    "type": "one-time",
+    "tags": ["meetings", "transcription", "ai"],
+    "audience": "beginner",
+    "featured": false,
+    "demo_link": "",
+    "whatsapp_message_template": "I want Meeting Summarizer Script (€15).",
+    "translations": {
+      "en": { "name": "Meeting Summarizer Script", "description": "Python script to transcribe audio (using Whisper) and generate concise meeting minutes." }
+    }
+  },
+  {
+    "id": "bundle-beginner-pentest",
+    "category": "bundle",
+    "price": "€39",
+    "type": "one-time",
+    "tags": ["bundle", "pentest", "beginner"],
+    "audience": "beginner",
+    "featured": true,
+    "included_products": ["rt-recon-automation", "bt-log-analyzer", "auto-vuln-patch"],
+    "whatsapp_message_template": "I want the Beginner Pentest Kit bundle (€39).",
+    "translations": {
+      "en": {
+        "name": "Beginner Pentest Kit",
+        "description": "Bundle: Recon Automation Toolkit + Log Analyzer Pro + Vulnerability Patch Automator. Save 30%."
+      }
+    }
+  },
+  {
+    "id": "bundle-secure-infra",
+    "category": "bundle",
+    "price": "€59",
+    "type": "one-time",
+    "tags": ["bundle", "infrastructure", "hardening"],
+    "audience": "intermediate",
+    "featured": true,
+    "included_products": ["bt-windows-hardening", "auto-deploy-scripts", "rt-cloud-enum"],
+    "whatsapp_message_template": "I want the Secure Infrastructure Kit bundle (€59).",
+    "translations": {
+      "en": {
+        "name": "Secure Infrastructure Kit",
+        "description": "Bundle: Windows Hardening Script Pack + Deployment Automation Scripts + Cloud Enumeration Toolkit. Save 25%."
+      }
+    }
+  },
+  {
+    "id": "bundle-dev-automation",
+    "category": "bundle",
+    "price": "€44",
+    "type": "one-time",
+    "tags": ["bundle", "devops", "automation"],
+    "audience": "intermediate",
+    "featured": true,
+    "included_products": ["auto-backup-mon", "biz-invoice-gen", "auto-deploy-scripts"],
+    "whatsapp_message_template": "I want the Dev Automation Kit bundle (€44).",
+    "translations": {
+      "en": {
+        "name": "Dev Automation Kit",
+        "description": "Bundle: Backup Health Monitor + Invoice Generator Toolkit + Deployment Automation Scripts. Save 28%."
+      }
     }
   }
 ]
