@@ -77,7 +77,8 @@
     "beginner": "Beginner",
     "intermediate": "Intermediate",
     "advanced": "Advanced",
-    "b2b": "Business"
+    "b2b": "Business",
+    "waCheckoutMsg": "Hello Vorynex, I'd like to purchase:"
   },
   "pt": {
     "siteName": "VORYNEX",
@@ -157,7 +158,8 @@
     "beginner": "Iniciante",
     "intermediate": "Intermediário",
     "advanced": "Avançado",
-    "b2b": "Empresarial"
+    "b2b": "Empresarial",
+    "waCheckoutMsg": "Olá Vorynex, gostaria de comprar:"
   },
   "es": {
     "siteName": "VORYNEX",
@@ -237,7 +239,8 @@
     "beginner": "Principiante",
     "intermediate": "Intermedio",
     "advanced": "Avanzado",
-    "b2b": "Empresarial"
+    "b2b": "Empresarial",
+    "waCheckoutMsg": "Hola Vorynex, me gustaría comprar:"
   },
   "fr": {
     "siteName": "VORYNEX",
@@ -317,7 +320,8 @@
     "beginner": "Débutant",
     "intermediate": "Intermédiaire",
     "advanced": "Avancé",
-    "b2b": "Entreprise"
+    "b2b": "Entreprise",
+    "waCheckoutMsg": "Bonjour Vorynex, je souhaite acheter :"
   },
   "it": {
     "siteName": "VORYNEX",
@@ -397,7 +401,8 @@
     "beginner": "Principiante",
     "intermediate": "Intermedio",
     "advanced": "Avanzato",
-    "b2b": "Aziendale"
+    "b2b": "Aziendale",
+    "waCheckoutMsg": "Ciao Vorynex, vorrei acquistare:"
   },
   "ru": {
     "siteName": "VORYNEX",
@@ -477,7 +482,8 @@
     "beginner": "Начинающий",
     "intermediate": "Средний",
     "advanced": "Продвинутый",
-    "b2b": "Бизнес"
+    "b2b": "Бизнес",
+    "waCheckoutMsg": "Привет Vorynex, я хочу купить:"
   },
   "de": {
     "siteName": "VORYNEX",
@@ -557,6 +563,7 @@
     "beginner": "Anfänger",
     "intermediate": "Fortgeschritten",
     "advanced": "Experte",
-    "b2b": "Business"
+    "b2b": "Business",
+    "waCheckoutMsg": "Hallo Vorynex, ich möchte kaufen:"
   }
 }
